@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Tutor</title>
+    <link rel="icon" type="image" href="./images/st Logo png.PNG">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24bccd4d50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-navbar">
+        <div class="main-navbar-first">
+            <button id="list-button" class="list-button"><i id="list-i" class="fa-solid fa-list"></i></button>
+            <button id="mood-change" onclick="modeChanger()"><i style='font-size:24px' class='fas'>&#xf186;</i></button>
+        </div>
+        <div class="main-navbar-second">
+            <a href="../index.html"><img class="brand-logo" src="./images/blue logo png .png"
+                    alt="stack tutor logo"></a>
+        </div>
+        <div class="main-navbar-third">
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="result-box">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- top category-->
+    <div id="category-div" class="category-div">
+        <a href="./Nginx-1-intro.html">Nginx</a>
+        <a href="">Java Script</a>
+        <a href="">React JS</a>
+        <a href="">Node JS</a>
+        <a href="">Angular JS</a>
+        <a href="">Mongo DB</a>
+        <a href="">Nginx</a>
+        <a href="">AWS</a>
+        <a href="">JAVA</a>
+        <a href="">Python</a>
+        <a href="">Type Script</a>
+    </div>
+    <!-- top category end -->
+
+    <!-- content div -->
+    <div id="main-div">
+        <div id="list-div" class="index-div">
+
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="small-input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                </div>
+                <div id="index-result-box">
+                </div>
+            </div>
+            <br>
+
+            <h6 class="index-title">NGINX Index</h6>
+
+
+            <div class="index-future-link">
+                <a href="./Nginx-1-intro.html"><i class="fa-solid fa-up-right-from-square"></i> Nginx Introduction</a>
+                <a href="./Nginx-2-C10k.html" ><i class="fa-solid fa-up-right-from-square"></i> C10k Problem</a>
+                <a href="./Nginx-3-High Performance.html"><i class="fa-solid fa-up-right-from-square"></i> High Performance</a>
+                <a href="./Nginx-4-Reverse Proxy.html"  id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> Reverse Proxy</a>
+                <a href=""><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
+                <a href=""><i class="fa-solid fa-up-right-from-square"></i> SSL/TLS Termination</a>
+                <a href=""><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting</a>
+                <a href=""><i class="fa-solid fa-up-right-from-square"></i> WebSockets Support</a>
+                <a href=""><i class="fa-solid fa-up-right-from-square"></i> HTTP/2 Support</a>
+            </div>
+
+
+        </div>
+        <div id="content-div" class="content-div mb-5 ">
+            <h1 class="main-title mt5 mb-5">Reverse Proxy</h1>
+
+            <p class="description mt-5 mb-3">A reverse proxy is a server or software application that sits between client devices and a web server, acting as an intermediary for client requests. It performs several important functions, including load balancing, security, and caching. Reverse proxies are commonly used to improve the security, scalability and performance of web applications. Here are write some key aspects of reverse proxies:
+            </p>
+
+            <a class="content-a-tag">1. Security:</a>
+            <p class="description-a-tag" > Reverse proxies can enhance the security of a web application by providing an additional layer of defense. They can hide the internal structure of your network, protect against distributed denial-of-service (DDoS) attacks, and perform security-related functions such as request filtering, content filtering, and access control.</p>
+
+                <a class="content-a-tag">2. Load Balancing:</a>
+            <p class="description-a-tag" > One of the primary roles of a reverse proxy is distributing incoming client requests across multiple backend servers. This helps distribute the load evenly, improve fault tolerance, and ensure high availability. Common load balancing algorithms include round-robin, least connections, and IP hash.Load balancing is enhance availability of web application </p>
+
+            <a class="content-a-tag">3. SSL/TLS Termination: </a>
+            <p class="description-a-tag" > Reverse proxies can handle SSL/TLS encryption and decryption on behalf of backend servers. This offloads the CPU-intensive task of SSL/TLS termination from application servers and can simplify certificate management.
+
+            </p>
+
+            <a class="content-a-tag">4. Caching:</a>
+            <p class="description-a-tag" > Reverse proxies can cache static content or even dynamic content to reduce the load on backend servers and improve response times for frequently accessed resources. Cached content can be served directly from the proxy to clients, reducing the need for backend requests.</p>
+
+            <a class="content-a-tag">5. Compression:</a>
+            <p class="description-a-tag" > Some reverse proxies can compress content before sending it to clients, reducing bandwidth usage and improving page load times.</p>
+
+            <a class="content-a-tag">6. Rewriting and URL Routing:</a>
+            <p class="description-a-tag" > Reverse proxies can rewrite URLs, modify headers, and perform URL routing, allowing you to create more user-friendly or SEO-friendly URLs or direct requests to specific backend servers based on URL patterns.</p>
+
+            <a class="content-a-tag">7. HTTP Acceleration:</a>
+            <p class="description-a-tag" > Reverse proxies can accelerate HTTP requests by serving static content directly and forwarding dynamic requests to the application servers. This can result in faster response times for clients.</p>
+
+            <a class="content-a-tag">8. Web Application Firewall (WAF):</a>
+            <p class="description-a-tag" > Some reverse proxies include Web Application Firewall functionality to protect against common web application vulnerabilities, such as SQL injection and cross-site scripting (XSS) attacks.</p>
+            
+
+            <a class="content-a-tag">9. Logging and Monitoring:</a>
+            <p class="description-a-tag" > Reverse proxies often provide detailed logs and monitoring capabilities, helping you track and analyze traffic patterns, errors, and performance issues.</p>
+
+            
+
+
+            <p class="description">
+                To set up a reverse proxy, you typically configure the reverse proxy server to listen for incoming client requests and define rules for how those requests should be forwarded to the backend servers. These configurations are usually done in the reverse proxy's configuration file. Overall, reverse proxies are a critical component in modern web application architectures, helping to optimize performance, enhance security, and provide scalability and high availability.</p>
+            <div class="next-prev-div mb-5 mt-5">
+                <a href="./Nginx-3-High Performance.html" class="next-prev-button">Preview</a>
+                <a href="" class="next-prev-button">Next</a>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- content div end -->
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

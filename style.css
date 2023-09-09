@@ -1,0 +1,371 @@
+/* body{
+    background-color: rgb(255, 0, 0);
+    color: black;
+} */
+
+
+.main-navbar{
+    width: 100%;
+    height: 70px;
+    box-shadow: -1px -11px 10px 10px grey;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* top first div style*/
+
+.main-navbar-first{
+    width: 20%;
+    height: 70px;
+    display: flex;
+    justify-content: start;
+}
+.list-button{
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+}
+.list-button i{
+    margin-top: 10px;
+    font-size: 30px;
+    color: black;
+}
+#mood-change{
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+}
+
+
+.main-navbar-second{
+    width: 33%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+.main-navbar-third{
+    background-color: transparent;
+    width: 33%;
+    height: 70px;
+}
+.brand-logo{
+    width: 200px;
+}
+.search-box{
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+.search-row{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    border: 1px solid;
+    border-radius: 40px;
+    padding: 1px 20px;
+    
+}
+.search-input{
+    flex: 1;
+    height: 25px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    color: #333;
+}
+.search-button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+
+}
+.search-button .fa-sold{
+    width: 25px;
+    color: #555;
+    font-size: 22px;
+    cursor: pointer;
+}
+::placeholder{
+    color: #555;
+}
+
+.result-box{
+    max-height: 200px;
+    background-color: transparent;
+    overflow-y: scroll;
+    z-index: 100;
+    position: relative;
+    /**/
+    box-shadow: 0px 0px 5px 0px black;
+    border-radius: 8px;
+    margin-top: 4px;
+}
+
+.result-box ul{
+    background: white;
+    padding: 15px 10px;
+}
+.result-box ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+    color: black;
+}
+.result-box ul li:hover{
+    background-color: rgb(184, 251, 198);
+}
+
+/*index-result box*/
+
+#index-result-box{
+    max-height: 200px;
+    background-color: transparent;
+    overflow-y: scroll;
+    z-index: 100;
+    position: relative;
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px 0px black;
+    border-radius: 8px;
+    margin-top: 4px;
+}
+#index-result-box ul{
+    margin-top: 10px;
+}
+#index-result-box ul li{
+    padding: 10px 10px;
+    list-style: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: black;
+}
+
+#index-result-box ul li:hover{
+    background-color: rgb(67, 255, 105);
+}
+
+
+@media (max-width: 850px) {
+    .main-navbar-third{
+        display: none;
+    }
+    .main-navbar-first{
+        width: 15%;
+        background-color: transparent;
+    }
+    .main-navbar-second{
+        width: 85%;
+    }
+    .brand-logo{
+        width: 180px;
+        margin-top: 5px;
+    }
+    
+}
+
+
+/* category style*/
+
+.category-div{
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+    
+}
+.category-div::-webkit-scrollbar {
+    display: none;
+  }
+
+.category-div a{
+    margin: 10px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+
+}
+
+
+
+#main-div{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/*index Div*/
+.index-div{
+    width: 250px;
+    background-color: transparent;
+    box-shadow: 1px 0px 10px grey;
+    padding: 10px 10px;
+    min-width: 230px;
+    z-index: 999;
+    min-height: 575px;
+}
+.index-div a{
+    display: block;
+    padding: 2px 30px;
+    text-decoration: none;
+    color: rgb(0, 137, 11);
+}
+
+
+.index-future-link a{
+    display: block;
+    padding: 2px 30px;
+    text-decoration: none;
+    /* color: rgb(0, 0, 0); */
+}
+
+.index-future-link a:hover{
+    color: green;
+    text-decoration: underline;
+}
+
+
+
+.hidden {
+    display: none;
+}
+.index-title{
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+
+/*Content Div*/
+
+.content-div{
+    z-index: 10;
+    margin-left: 8px;
+    background-color: transparent;
+    min-height: 200px;
+    width: 80%;
+    min-height: 575px;
+    /* box-shadow: 2px 2px 5px 3px grey; */
+}
+
+
+@media (max-width: 850px) {
+    .content-div{
+        width: 100%;
+    }
+    
+}
+
+#standing-page{
+    color: green;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.main-title{
+    color: green;
+    font-weight: 700;
+    text-align: center;    
+    margin-top: 33px;
+    text-decoration: underline;
+    background-color: transparent;
+
+}
+.sub-title{
+    color: green;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.description{
+    padding: 5px 20px;
+    /* font-size: x-large; */
+    padding: 5px 20px;
+    font-size: 20px;
+    line-height: 40px;
+    
+}
+.content-a-tag{
+    display: block;
+    padding: 5px 30px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: green;
+    font-size: x-large;
+    font-weight: 700;
+}
+.description-a-tag{
+    display: block;
+    padding: 2px 40px;
+    font-size: x-large;
+    margin-top: 5px;
+}
+.read-more{
+    text-decoration: none;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  .dark-mode a:hover{
+    background-color: black;
+    color: rgb(0, 182, 24);
+  }
+  .white-mode {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  .white-mode a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 182, 24);
+  }
+
+  .next-prev-div{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 9px;
+  }
+  .next-prev-button{
+    background-color: green;
+    min-width: 100px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 4px 4px 2px 0px grey;
+    padding: 5px 10px;
+  }
+  .next-prev-button:hover{
+    background-color: rgb(0, 207, 0);
+  }
+
+
+
+  /*home*/
+
+  .ss{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+  }
+
+  .coming-soon{
+    text-align: center;
+    margin-top: 20%;
+    color: gray;
+}

@@ -143,9 +143,8 @@ function modeChanger() {
             
         
     if(darkMode){
-        console.log('dark-mdoe');
         element.classList.toggle("dark-mode");
-        brandLogo[0].src = '/images/black log png.png';
+        brandLogo[0].src = './images/black log png.png';
         listButton.style.color = 'white'
         listIcon.style.color = 'white'
         modeIcon.style.color = 'white'

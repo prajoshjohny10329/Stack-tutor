@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Tutor</title>
+    <link rel="icon" type="image" href="./images/st Logo png.PNG">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24bccd4d50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-navbar">
+        <div class="main-navbar-first">
+            <button id="list-button" class="list-button"><i id="list-i"  class="fa-solid fa-list"></i></button>
+            <button id="mood-change" onclick="modeChanger()">
+                <i id="mood-i" style='font-size:24px' class='fas'>&#xf186;</i>
+            </button>
+        </div>
+        <div class="main-navbar-second">
+            <a href="/"><img class="brand-logo" src="./images/blue logo png .png" alt="stack tutor logo"></a>
+        </div>
+        <div class="main-navbar-third">
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="result-box">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- top category-->
+    <div id="category-div" class="category-div">
+        <a href="./Nginx-1-intro.html">Nginx</a>
+        <a href="./coming-soon.html">Java Script</a>
+        <a href="./coming-soon.html">React JS</a>
+        <a href="./coming-soon.html">Node JS</a>
+        <a href="./coming-soon.html">Angular JS</a>
+        <a href="./coming-soon.html">Mongo DB</a>
+        <a href="./coming-soon.html">Nginx</a>
+        <a href="./coming-soon.html">AWS</a>
+        <a href="./coming-soon.html">JAVA</a>
+        <a href="./coming-soon.html">Python</a>
+        <a href="./coming-soon.html">Type Script </a>
+    </div>
+    <!-- top category end -->
+
+    <!-- Main div -->
+    <div id="main-div">
+        <div id="list-div" class="index-div">
+
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="small-input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                </div>
+                <div id="index-result-box">
+                </div>
+            </div>
+            <br>
+
+            <!-- index div -->
+            <h6 class="index-title">NGINX Index</h6>
+            <div class="index-future-link">
+                <a href="./Nginx-1-intro.html" ><i class="fa-solid fa-up-right-from-square"></i> Nginx Introduction</a>
+                <a href="./Nginx-2-C10k.html"> <i class="fa-solid fa-up-right-from-square"></i> C10k Problem</a>
+                <a href="./Nginx-3-High Performance.html"><i class="fa-solid fa-up-right-from-square"></i> High Performance</a>
+                <a href="./Nginx-4-Reverse Proxy.html" ><i class="fa-solid fa-up-right-from-square"></i> Reverse Proxy</a>
+                <a href="./Nginx-5-caching.html"><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
+                <a href="./Nginx-6-Types-caching.html" ><i class="fa-solid fa-up-right-from-square"></i> Types of Caching</a>
+                <a href="./Nginx-7-Proxy caching.html"><i class="fa-solid fa-up-right-from-square"></i> Proxy caching</a>
+                <a href="./Nginx-8-Proxy-caching-config.html"><i class="fa-solid fa-up-right-from-square"></i> Configuring proxy caching</a>
+                <a href="./Nginx-9-Load-Balancing.html" ><i class="fa-solid fa-up-right-from-square"></i> Load Balancing</a>
+                <a href="./Nginx-10-Load-Balancing-configuration.html" ><i class="fa-solid fa-up-right-from-square"></i> Load Balancing Configuration</a>
+                <a href="./Nginx-11-Security-Features.html" ><i class="fa-solid fa-up-right-from-square"></i> Security Features</a>
+                <a href="./Nginx-12-Web-Application-Firewall .html" ><i class="fa-solid fa-up-right-from-square"></i> Web Application Firewall</a>
+                <a href="./Nginx-13-WAF-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> WAF in NGINX.</a>
+                <!-- update -->
+                <a href="./Nginx-14-ModSecurity-Configuration.html" ><i class="fa-solid fa-up-right-from-square"></i> ModSecurity Configuration</a>
+                <a href="./Nginx-15-DDoS.html" ><i class="fa-solid fa-up-right-from-square"></i> What is DDos</a>
+                <a href="./Nginx-16-DDoS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> DDos in NGINX</a>
+                <a href="./Nginx-17-SSl-TLS-Termination.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS Termination</a>
+                <a href="./Nginx-18-SSL-TLS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS in NGINX</a>
+                <a href="./Nginx-19-URL-Rewriting.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting</a>
+                <a href="./Nginx-20-URL-Rewriting-Nginx.html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting in NGINX</a>
+                <a href="./Nginx-21-Technologies-Support-to-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i>Technologies Support to Nginx</a>
+                <a href="./Nginx-22-PM2.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2</a>
+                <a href="./Nginx-23-PM2-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2 Commands</a>
+                <a href="./Nginx-24-Why-Configure-FireWall.html" ><i class="fa-solid fa-up-right-from-square"></i>Why Configure FireWall</a>
+                <a href="./Nginx-25-FireWall-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i>FireWall Commands</a>
+                <a href="./Nginx-26-Deploy-Node-Project.html" ><i class="fa-solid fa-up-right-from-square"></i>Deploy Node Project</a>
+            </div>
+            <!-- index div end -->
+        </div>
+
+
+        <div id="content-div" class="content-div mb-2">
+            <h1 class="main-title mt5 mb-5">URL Rewriting Configuration in NGINX</h1>
+
+            <p class="description-a-tag  mb-3">You read about what is URL Rewriting and what its advantages were before this page. On this page, we give some configuration steps for URL Rewriting in NGINX. Basic URL Rewriting, Redirecting to HTTPS, Rewriting Query Parameters, Removing File Extensions, Adding or Removing Trailing Slashes. These are some URL Rewriting methods in NGINX
+            </p>
+            <p class="description-a-tag  mb-3">To perform URL rewriting in Nginx, you can follow these general steps. These steps assume you have a basic understanding of Nginx configuration and have the necessary permissions to edit the configuration files</p>
+
+            <a class="content-a-tag">1. Backup Your Nginx Configuration</a>
+            <p class="description-a-tag">Before making any changes, it's a good practice to create a backup of your current Nginx configuration. This ensures that you can revert to the previous state if any issues arise.</p>
+
+
+                 <div class="code-box" title="For Ubuntu/Debian">
+                    <div class="code-panel">
+                        <div class="copy-code-div">
+                            <h6 class="which-cmd">bash</h6>
+                        <button class="copy-code" id="copy-btn" onclick="codeCopyFunction('code-div','copy-btn')">copy</button>
+                        </div>
+                        <div id="code-div" class="code-div">
+                            <p>sudo cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            <a class="content-a-tag">2. Edit Nginx Configuration File</a>
+            <p class="description-a-tag">Open the Nginx configuration file using a text editor. The main configuration file is often located at `/etc/nginx/nginx.conf `or `/etc/nginx/sites-available/default`, depending on your setup.</p>
+
+            <div class="code-box" title="For Ubuntu/Debian">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn1" onclick="codeCopyFunction('code-div1','copy-btn1')">copy</button>
+                    </div>
+                    <div id="code-div1" class="code-div">
+                        <p>sudo nano /etc/nginx/nginx.conf<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <a class="content-a-tag">3. Types of URL rewriting</a>
+            <p class="description-a-tag">Below are some examples of URL rewriting in Nginx </p>
+
+                <p class="description-a-tag"><strong>1. Basic URL Rewriting</strong> <br>In this example, any request to `/old-path/*` will be permanently redirected to `/new-path/*`. The permanent flag indicates a 301 (permanent) redirect. <br>
+                </p >
+                <div class="code-box">
+                    <div class="code-panel">
+                        <div class="copy-code-div">
+                            <h6 class="which-cmd">nginx</h6>
+                        <button class="copy-code" id="copy-btn2" onclick="codeCopyFunction('code-div2','copy-btn2')">copy</button>
+                        </div>
+                        <div id="code-div2" class="code-div">
+                            <p >server {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;listen 80;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;server_name example.com;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;location /old-path {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rewrite ^/old-path/(.*)$ /new-path/$1 permanent;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;# Other server configurations...
+                                <br>
+                                }<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="description-a-tag"><strong>`location` </strong> : This location block specifies that the following directives apply to requests that have a URI starting with /old-path.
+                    </li>
+                    <br>
+                    <li class="description-a-tag"><strong>`rewrite ` </strong> : This rewrite directive is used to modify the requested URI.</li>
+                </ul>
+                <br>
+            
+                <!-- second -->
+
+                <p class="description-a-tag"><strong>2. Removing File Extensions</strong> <br>
+                </p >
+                <div class="code-box">
+                    <div class="code-panel">
+                        <div class="copy-code-div">
+                            <h6 class="which-cmd">nginx</h6>
+                        <button class="copy-code" id="copy-btn3" onclick="codeCopyFunction('code-div3','copy-btn3')">copy</button>
+                        </div>
+                        <div id="code-div3" class="code-div">
+                            <p >server {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;listen 80;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;server_name example.com;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;location / {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try_files $uri $uri/ $uri.html =404;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;# Other server configurations...
+                                <br>
+                                }<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="description-a-tag">This example removes file extensions from URLs. For instance, if there is a file named `example.html`, a request for `/example` will serve that file. The `try_files` directive checks for the existence of different variations of the requested URL.
+                </p>
+
+                <!-- second -->
+
+                <p class="description-a-tag"><strong>3. Redirecting to HTTPS</strong> <br>
+                </p >
+                <div class="code-box">
+                    <div class="code-panel">
+                        <div class="copy-code-div">
+                            <h6 class="which-cmd">nginx</h6>
+                        <button class="copy-code" id="copy-btn4" onclick="codeCopyFunction('code-div4','copy-btn4')">copy</button>
+                        </div>
+                        <div id="code-div4" class="code-div">
+                            <p >server {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;listen 80;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;server_name example.com;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;# Redirect HTTP to HTTPS<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;return 301 https://$host$request_uri;<br>
+                                } <br><br>
+                                server {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;listen 443 ssl;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;server_name example.com;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;# SSL configurations...<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;# Other server configurations...<br><br>
+                                } <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="description-a-tag">This example redirects all HTTP traffic to HTTPS. The return 301 statement issues a permanent redirect.
+                </p>
+
+                <!-- second -->
+
+                <p class="description-a-tag"><strong>4. Adding or Removing Trailing Slashes</strong> <br>
+                </p >
+                <div class="code-box">
+                    <div class="code-panel">
+                        <div class="copy-code-div">
+                            <h6 class="which-cmd">nginx</h6>
+                        <button class="copy-code" id="copy-btn5" onclick="codeCopyFunction('code-div5','copy-btn5')">copy</button>
+                        </div>
+                        <div id="code-div5" class="code-div">
+                            <p >server {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;listen 80;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;server_name example.com;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;location /add-trailing-slash {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rewrite ^(/add-trailing-slash[^/]+)$ $1/ permanent;
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;location /remove-trailing-slash/ {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rewrite ^(/remove-trailing-slash)/$ $1 permanent;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;# Other server configurations...<br>
+                            } <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="description-a-tag">In the first location block, a trailing slash is added to URLs under `/add-trailing-slash`. In the second location block, a trailing slash is removed from URLs under `/remove-trailing-slash/`.
+                </p>
+
+
+            <!-- second -->
+
+            <p class="description-a-tag"><strong>5. Adding or Removing Trailing Slashes</strong> <br>
+            </p >
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">nginx</h6>
+                    <button class="copy-code" id="copy-btn6" onclick="codeCopyFunction('code-div6','copy-btn6')">copy</button>
+                    </div>
+                    <div id="code-div6" class="code-div">
+                        <p >server {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;listen 80;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;server_name example.com;<br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;location /rewrite-query {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rewrite ^/rewrite-query/(.*)$ /script.php?q=$1 last;<br>
+                            }<br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;# Other server configurations...<br>
+                            } <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="description-a-tag">In this example, URLs like /rewrite-query/value are rewritten to /script.php?q=value.
+            </p>
+            
+
+            <a class="content-a-tag">4. Test and Reload Nginx</a>
+            <p class="description-a-tag">Before applying the changes, check the syntax of your Nginx configuration to ensure there are no errors. If there are no syntax errors, you'll see a message indicating that the configuration is okay.Apply the changes by reloading the Nginx configuration. This ensures that the new URL rewriting rules take effect.</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn7" onclick="codeCopyFunction('code-div7','copy-btn7')">copy</button>
+                    </div>
+                    <div id="code-div7" class="code-div">
+                        <p >sudo nginx -t<br>
+                            sudo systemctl reload nginx<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">If you're not using systemd, you might use `service nginx reload `or `/etc/init.d/nginx reload` instead.</p>
+
+
+            <a class="content-a-tag">5. Monitor Nginx Logs</a>
+            <p class="description-a-tag">Monitor the Nginx error logs (`/var/log/nginx/error.log`) for any issues related to the URL rewriting configuration. This can help you identify and troubleshoot problems.</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn8" onclick="codeCopyFunction('code-div8','copy-btn8')">copy</button>
+                    </div>
+                    <div id="code-div8" class="code-div">
+                        <p >sudo tail -f /var/log/nginx/error.log
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">6. Test the Rewritten URLs</a>
+            <p class="description-a-tag">Use a web browser or a tool like `curl` to test the rewritten URLs and ensure that the desired redirection or modifications are taking place.Verify that the response includes the expected redirection status code (e.g., `301 Moved Permanently`).</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn8" onclick="codeCopyFunction('code-div8','copy-btn8')">copy</button>
+                    </div>
+                    <div id="code-div8" class="code-div">
+                        <p >curl -I http://example.com/old-path/some-page
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <p class="description">Remember to adjust the configuration according to your specific use case, and test thoroughly to ensure that the URL rewriting rules behave as expected. Always be cautious when making changes to production configurations.</p>
+            <div class="next-prev-div mb-5 mt-5">
+                <a title="URL Rewriting" href="./Nginx-19-URL-Rewriting.html" class="next-prev-button">Previous</a>
+                <a title="Next topic about Technologies-Support-to-Nginx" id="next-page-center" href="./Nginx-21-Technologies-Support-to-Nginx.html">Technologies Support to Nginx</a>
+                <a title="Next topic about Technologies-Support-to-Nginx" href="./Nginx-21-Technologies-Support-to-Nginx.html" class="next-prev-button">Next</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Main div end -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

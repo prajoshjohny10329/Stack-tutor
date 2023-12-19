@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Tutor</title>
+    <link rel="icon" type="image" href="./images/st Logo png.PNG">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24bccd4d50.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main-navbar">
+        <div class="main-navbar-first">
+            <button id="list-button" class="list-button"><i id="list-i"  class="fa-solid fa-list"></i></button>
+            <button id="mood-change" onclick="modeChanger()">
+                <i id="mood-i" style='font-size:24px' class='fas'>&#xf186;</i>
+            </button>
+        </div>
+        <div class="main-navbar-second">
+            <a href="/"><img class="brand-logo" src="./images/blue logo png .png" alt="stack tutor logo"></a>
+        </div>
+        <div class="main-navbar-third">
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="result-box">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- top category-->
+    <div id="category-div" class="category-div">
+        <a href="./Nginx-1-intro.html">Nginx</a>
+        <a href="./coming-soon.html">Java Script</a>
+        <a href="./coming-soon.html">React JS</a>
+        <a href="./coming-soon.html">Node JS</a>
+        <a href="./coming-soon.html">Angular JS</a>
+        <a href="./coming-soon.html">Mongo DB</a>
+        <a href="./coming-soon.html">Nginx</a>
+        <a href="./coming-soon.html">AWS</a>
+        <a href="./coming-soon.html">JAVA</a>
+        <a href="./coming-soon.html">Python</a>
+        <a href="./coming-soon.html">Type Script </a>
+    </div>
+    <!-- top category end -->
+
+    <!-- Main div -->
+    <div id="main-div">
+        <div id="list-div" class="index-div">
+
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="small-input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                </div>
+                <div id="index-result-box">
+                </div>
+            </div>
+            <br>
+
+            <!-- index div -->
+            <h6 class="index-title">NGINX Index</h6>
+            <div class="index-future-link">
+                <a href="./Nginx-1-intro.html" ><i class="fa-solid fa-up-right-from-square"></i> Nginx Introduction</a>
+                <a href="./Nginx-2-C10k.html"> <i class="fa-solid fa-up-right-from-square"></i> C10k Problem</a>
+                <a href="./Nginx-3-High Performance.html"><i class="fa-solid fa-up-right-from-square"></i> High Performance</a>
+                <a href="./Nginx-4-Reverse Proxy.html" ><i class="fa-solid fa-up-right-from-square"></i> Reverse Proxy</a>
+                <a href="./Nginx-5-caching.html"><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
+                <a href="./Nginx-6-Types-caching.html" ><i class="fa-solid fa-up-right-from-square"></i> Types of Caching</a>
+                <a href="./Nginx-7-Proxy caching.html"><i class="fa-solid fa-up-right-from-square"></i> Proxy caching</a>
+                <a href="./Nginx-8-Proxy-caching-config.html"><i class="fa-solid fa-up-right-from-square"></i> Configuring proxy caching</a>
+                <a href="./Nginx-9-Load-Balancing.html" ><i class="fa-solid fa-up-right-from-square"></i> Load Balancing</a>
+                <a href="./Nginx-10-Load-Balancing-configuration.html"><i class="fa-solid fa-up-right-from-square"></i> Load Balancing Configuration</a>
+                <a href="./Nginx-11-Security-Features.html" ><i class="fa-solid fa-up-right-from-square"></i> Security Features</a>
+                <a href="./Nginx-12-Web-Application-Firewall .html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> Web Application Firewall</a>
+                <a href="./Nginx-13-WAF-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> WAF in NGINX.</a>
+                <!-- update -->
+                <a href="./Nginx-14-ModSecurity-Configuration.html" ><i class="fa-solid fa-up-right-from-square"></i> ModSecurity Configuration</a>
+                <a href="./Nginx-15-DDoS.html" ><i class="fa-solid fa-up-right-from-square"></i> What is DDos</a>
+                <a href="./Nginx-16-DDoS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> DDos in NGINX</a>
+                <a href="./Nginx-17-SSl-TLS-Termination.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS Termination</a>
+                <a href="./Nginx-18-SSL-TLS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS in NGINX</a>
+                <a href="./Nginx-19-URL-Rewriting.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting</a>
+                <a href="./Nginx-20-URL-Rewriting-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting in NGINX</a>
+                <a href="./Nginx-21-Technologies-Support-to-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i>Technologies Support to Nginx</a>
+                <a href="./Nginx-22-PM2.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2</a>
+                <a href="./Nginx-23-PM2-Commands.html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> PM2 Commands</a>
+                <a href="./Nginx-24-Why-Configure-FireWall.html" ><i class="fa-solid fa-up-right-from-square"></i>Why Configure FireWall</a>
+                <a href="./Nginx-25-FireWall-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i>FireWall Commands</a>
+                <a href="./Nginx-26-Deploy-Node-Project.html" ><i class="fa-solid fa-up-right-from-square"></i>Deploy Node Project</a>
+            </div>
+            <!-- index div end -->
+        </div>
+
+
+        <div id="content-div" class="content-div mb-2">
+            <h1 class="main-title mt5 mb-5">PM2 Commands</h1>
+
+            <p class="description-a-tag  mb-3">Before this page, we hope you have read about PM2 and its advantages. PM2 provides a range of commands through its command-line interface (CLI) for managing Node.js applications. Here are some commonly used PM2 commands:</p>
+
+
+            <p class="description-a-tag"><strong>`npm install -g pm2`: </strong>To get started with PM2, you typically install it globally using npm:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn0" onclick="codeCopyFunction('code-div0','copy-btn0')">copy</button>
+                    </div>
+                    <div id="code-div0" class="code-div">
+                        <p >npm install -g pm2
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <p class="description-a-tag"><strong>`pm2 start app`: </strong>This code for Start a Node.js application.  In this command replace 'app' to your application name.Application name means  the entry point of your Node.js application, typically a JavaScript file. For example, `app.js` or `server.js`.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn1" onclick="codeCopyFunction('code-div1','copy-btn1')">copy</button>
+                    </div>
+                    <div id="code-div1" class="code-div">
+                        <p >pm2 start app </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>`pm2 start app.js`: </strong>This code for start a specific Node.js script. In this command `pm2 start app.js` Please replace 'app.js' to your script file.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn2" onclick="codeCopyFunction('code-div2','copy-btn2')">copy</button>
+                    </div>
+                    <div id="code-div2" class="code-div">
+                        <p >pm2 start app.js</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>`pm2 start app -i instances`: </strong>This command is for Cluster mode. Cluster mode is particularly useful for applications that can take advantage of parallel processing and benefit from load balancing across multiple instances.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn3" onclick="codeCopyFunction('code-div3','copy-btn3')">copy</button>
+                    </div>
+                    <div id="code-div3" class="code-div">
+                        <p >pm2 start app -i instances</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">In this command replace `app` with the actual entry point of your Node.js application (e.g., app.js or server.js), and replace `instances` with the desired number of instances.The number of instances depends on factors such as the available CPU cores and the requirements of your application. Here we give an example:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn4" onclick="codeCopyFunction('code-div4','copy-btn4')">copy</button>
+                    </div>
+                    <div id="code-div4" class="code-div">
+                        <p>pm2 start app.js -i 4</p>
+                    </div>
+                </div>
+            </div>
+            <p class="description-a-tag">Keep in mind that not all applications need to run in cluster mode, and the optimal number of instances may vary based on the nature of your application and the resources available on your server.</p>
+
+
+            <!-- start ad stop -->
+
+            <p class="description-a-tag"><strong>`pm2 stop app_name_or_ID`: </strong>This command is used to stop all running applications managed by PM2. When you run this command, PM2 will terminate the processes it is currently managing.If you want to stop a specific application or process, you can provide the process name or process ID as an argument.For process name: </p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn5" onclick="codeCopyFunction('code-div5','copy-btn5')">copy</button>
+                    </div>
+                    <div id="code-div5" class="code-div">
+                        <p >pm2 stop app</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">For process ID: </p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn8" onclick="codeCopyFunction('code-div8','copy-btn8')">copy</button>
+                    </div>
+                    <div id="code-div8" class="code-div">
+                        <p >pm2 stop 0 </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>`pm2 restart`: </strong>This command is used to restart all running applications managed by PM2. When you run this command, PM2 will stop all the processes it is managing and then restart them. This can be useful when you've made changes to your application or its configuration.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn06" onclick="codeCopyFunction('code-div06','copy-btn06')">copy</button>
+                    </div>
+                    <div id="code-div06" class="code-div">
+                        <p >pm2 restart</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>`pm2 restart app_name_or_ID`:</strong>This command is used to restart specific running application .This can be useful when you've made changes to your application or its configuration,and you can restart a specific application without affecting other running processes managed by PM2.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn6" onclick="codeCopyFunction('code-div6','copy-btn6')">copy</button>
+                    </div>
+                    <div id="code-div6" class="code-div">
+                        <p >pm2 restart app</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">This example for Restart a specific application by process ID. Replace `0`with the actual process ID:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn7" onclick="codeCopyFunction('code-div7','copy-btn7')">copy</button>
+                    </div>
+                    <div id="code-div7" class="code-div">
+                        <p >pm2 restart 0</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>`pm2 reload`: </strong>When you run `pm2 reload`, PM2 will try to reload your application gracefully, allowing existing connections to finish before the new code is applied. This can help avoid disruptions to your users during the deployment process. It's a useful command for achieving zero-downtime deployments.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn9" onclick="codeCopyFunction('code-div9','copy-btn9')">copy</button>
+                    </div>
+                    <div id="code-div9" class="code-div">
+                        <p >pm2 reload</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Listing -->
+
+            <p class="description-a-tag"><strong>`pm2 list`: </strong>This command is used to display a list of all the processes managed by PM2. When you run this command, PM2 will provide information about each running process, including details such as process name, process ID (PID), status, and other relevant information.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn10" onclick="codeCopyFunction('code-div10','copy-btn10')">copy</button>
+                    </div>
+                    <div id="code-div10" class="code-div">
+                        <p >pm2 list</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="description-a-tag"><strong>`pm2 monit`: </strong>This command is used to launch an interactive monitoring dashboard provided by PM2. When you run this command, PM2 will open a web-based user interface in your default web browser, allowing you to monitor the health and performance of your running Node.js processes</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn11" onclick="codeCopyFunction('code-div11','copy-btn11')">copy</button>
+                    </div>
+                    <div id="code-div11" class="code-div">
+                        <p >pm2 monit</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>`pm2 logs`: </strong>This command is used to display the combined logs of all processes managed by PM2. When you run this command, PM2 will aggregate and display the logs generated by each running process. This is particularly useful for monitoring and troubleshooting issues in your Node.js applications.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn12" onclick="codeCopyFunction('code-div12','copy-btn12')">copy</button>
+                    </div>
+                    <div id="code-div12" class="code-div">
+                        <p >pm2 logs</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>`pm2 logs app_name_or_ID`: </strong>This command is used to display logs for a specific process applications.Replace `app_name_or_ID` with the name or process ID of the application you want to get logs. </p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn12" onclick="codeCopyFunction('code-div12','copy-btn12')">copy</button>
+                    </div>
+                    <div id="code-div12" class="code-div">
+                        <p >pm2 logs app_name_or_ID</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>`pm2 flush`: </strong>This  command is used to clear (or "flush") the logs for all processes managed by PM2. When you run this command, it will remove the log entries that have been accumulated in the internal log buffer.
+            This command can be useful when you want to clear the logs without stopping or restarting the processes.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn13" onclick="codeCopyFunction('code-div13','copy-btn13')">copy</button>
+                    </div>
+                    <div id="code-div13" class="code-div">
+                        <p>pm2 flush</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="description-a-tag"><strong>`pm2 delete app_name_or_id`: </strong> <br>This  command is used to to remove a specific application from the PM2 process list. When you run this command, PM2 stops and deletes the specified application, and it will no longer be managed by PM2. Replace `app_name_or_id` with the name or process ID of the application you want to delete</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn14" onclick="codeCopyFunction('code-div14','copy-btn14')">copy</button>
+                    </div>
+                    <div id="code-div14" class="code-div">
+                        <p>pm2 delete app </p>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <!-- checked -->
+            <p class="description-a-tag"><strong>`pm2 delete all`: </strong> If you want to stop and delete all applications managed by PM2, you can use the following command:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn15" onclick="codeCopyFunction('code-div15','copy-btn15')">copy</button>
+                    </div>
+                    <div id="code-div15" class="code-div">
+                        <p>pm2 delete all</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>`pm2 scale app_name_or_id instances`: </strong>This command is used to scale a specific application by adjusting the number of instances it runs. Scaling can be useful for distributing the load and improving the performance and reliability of your application.Replace `app_name_or_id` with the name or process ID of the application you want to scale, and `instances` with the desired number of instances.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn16" onclick="codeCopyFunction('code-div16','copy-btn16')">copy</button>
+                    </div>
+                    <div id="code-div16" class="code-div">
+                        <p>pm2 scale app 4 </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>`pm2 show app_name_or_id`: </strong>This will display detailed information about the application, including the current number of instances and other relevant details.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn17" onclick="codeCopyFunction('code-div17','copy-btn17')">copy</button>
+                    </div>
+                    <div id="code-div17" class="code-div">
+                        <p>pm2 show app </p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="description-a-tag"><strong>`npm install -g pm2@latest
+                `: </strong>When you run this command, npm checks the npm registry for the latest version of the PM2 package and installs it globally on your system. This ensures that you have the most recent version of PM2 and can benefit from any new features or bug fixes.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn18" onclick="codeCopyFunction('code-div18','copy-btn18')">copy</button>
+                    </div>
+                    <div id="code-div18" class="code-div">
+                        <p>npm install -g pm2@latest</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>`pm2 save`: </strong>This command is particularly useful when you want to persist your PM2 process configuration, making it easier to manage and reproduce your deployment settings. The generated `ecosystem.config.js` file can be version-controlled and shared across different environments.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn19" onclick="codeCopyFunction('code-div19','copy-btn19')">copy</button>
+                    </div>
+                    <div id="code-div19" class="code-div">
+                        <p>pm2 save</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>`pm2 resurrect`: </strong>The `pm2 resurrect` command in PM2 is used to restart previously saved processes based on the information stored in the ecosystem file, which is usually named `ecosystem.config.js`. This command is useful for restoring your applications to their previous state after a server restart.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn20" onclick="codeCopyFunction('code-div20','copy-btn20')">copy</button>
+                    </div>
+                    <div id="code-div20" class="code-div">
+                        <p>pm2 resurrect</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>`pm2 info`: </strong>This command in PM2 is used to display detailed information about the system, including the Node.js version, PM2 version, and other relevant details. It provides a comprehensive overview of the PM2 environment.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn21" onclick="codeCopyFunction('code-div21','copy-btn21')">copy</button>
+                    </div>
+                    <div id="code-div21" class="code-div">
+                        <p>pm2 info</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>`pm2 startup`: </strong>The pm2 startup command in PM2 is used to generate and configure a startup script that ensures PM2 starts automatically when your system boots. This is particularly useful for setting up PM2 to run as a service, making it persistent across reboots.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn22" onclick="codeCopyFunction('code-div22','copy-btn22')">copy</button>
+                    </div>
+                    <div id="code-div22" class="code-div">
+                        <p>pm2 startup</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">If you want to specify the init system manually, you can use the --hp flag followed by the path to the home directory of the target user. For example:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn23" onclick="codeCopyFunction('code-div23','copy-btn23')">copy</button>
+                    </div>
+                    <div id="code-div23" class="code-div">
+                        <p style="white-space: nowrap;">pm2 startup systemd --hp /home/your_username</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">Keep in mind that the exact steps and commands generated by `pm2 startup` may vary based on your operating system and init system (e.g., systemd, init.d). Always follow the instructions provided by `pm2 startup` to ensure proper configuration for your specific environment. Additionally, administrative privileges might be required to execute the generated command, so use `sudo` or run your command prompt as an administrator as needed.</p>
+
+            <p class="description-a-tag"><p class="description-a-tag"><strong>`pm2 kill: </strong>The `pm2 kill` command is used to kill the PM2 daemon along with all the processes it is managing. This command forcefully terminates all PM2-managed processes and stops the PM2 daemon itself.</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn24" onclick="codeCopyFunction('code-div24','copy-btn24')">copy</button>
+                    </div>
+                    <div id="code-div24" class="code-div">
+                        <p>pm2 <span class="text-warning">kill</span> </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><p class="description-a-tag"><strong>`pm2 --help`: </strong>The command is used to display the help information and documentation for the PM2 process manager. When you run `pm2 --help` in the terminal, it provides a summary of available commands, options, and their descriptions. This is helpful for users who want to learn more about the functionality and usage of PM2. </p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn25" onclick="codeCopyFunction('code-div25','copy-btn25')">copy</button>
+                    </div>
+                    <div id="code-div25" class="code-div">
+                        <p>pm2 --<span class="text-warning">help</span> </p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="description">Overall, PM2 is a powerful tool for managing Node.js processes in production, providing features for deployment, monitoring, scaling, and ensuring the reliability of your applications.Next page we will covered PM2 commands.</p>
+
+            <div class="next-prev-div mb-5 mt-5">
+                <a title="PM2" href="./Nginx-22-PM2.html" class="next-prev-button">Previous</a>
+                <a title="Next topic about Why Configure FireWall" id="next-page-center" href="./Nginx-24-Why-Configure-FireWall.html">Why Configure FireWall</a>
+                <a title="Next topic about Why Configure FireWall" href="./Nginx-24-Why-Configure-FireWall.html" class="next-prev-button">Next</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Main div end -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Tutor</title>
+    <link rel="icon" type="image" href="./images/st Logo png.PNG">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24bccd4d50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-navbar">
+        <div class="main-navbar-first">
+            <button id="list-button" class="list-button"><i id="list-i"  class="fa-solid fa-list"></i></button>
+            <button id="mood-change" onclick="modeChanger()">
+                <i id="mood-i" style='font-size:24px' class='fas'>&#xf186;</i>
+            </button>
+        </div>
+        <div class="main-navbar-second">
+            <a href="/"><img class="brand-logo" src="./images/blue logo png .png" alt="stack tutor logo"></a>
+        </div>
+        <div class="main-navbar-third">
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="result-box">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- top category-->
+    <div id="category-div" class="category-div">
+        <a href="./Nginx-1-intro.html">Nginx</a>
+        <a href="./coming-soon.html">Java Script</a>
+        <a href="./coming-soon.html">React JS</a>
+        <a href="./coming-soon.html">Node JS</a>
+        <a href="./coming-soon.html">Angular JS</a>
+        <a href="./coming-soon.html">Mongo DB</a>
+        <a href="./coming-soon.html">Nginx</a>
+        <a href="./coming-soon.html">AWS</a>
+        <a href="./coming-soon.html">JAVA</a>
+        <a href="./coming-soon.html">Python</a>
+        <a href="./coming-soon.html">Type Script </a>
+    </div>
+    <!-- top category end -->
+
+    <!-- Main div -->
+    <div id="main-div">
+        <div id="list-div" class="index-div">
+
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="small-input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                </div>
+                <div id="index-result-box">
+                </div>
+            </div>
+            <br>
+
+            <!-- index div -->
+            <h6 class="index-title">NGINX Index</h6>
+            <div class="index-future-link">
+                <a href="./Nginx-1-intro.html" ><i class="fa-solid fa-up-right-from-square"></i> Nginx Introduction</a>
+                <a href="./Nginx-2-C10k.html"> <i class="fa-solid fa-up-right-from-square"></i> C10k Problem</a>
+                <a href="./Nginx-3-High Performance.html"><i class="fa-solid fa-up-right-from-square"></i> High Performance</a>
+                <a href="./Nginx-4-Reverse Proxy.html" ><i class="fa-solid fa-up-right-from-square"></i> Reverse Proxy</a>
+                <a href="./Nginx-5-caching.html"><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
+                <a href="./Nginx-6-Types-caching.html" ><i class="fa-solid fa-up-right-from-square"></i> Types of Caching</a>
+                <a href="./Nginx-7-Proxy caching.html"><i class="fa-solid fa-up-right-from-square"></i> Proxy caching</a>
+                <a href="./Nginx-8-Proxy-caching-config.html"><i class="fa-solid fa-up-right-from-square"></i> Configuring proxy caching</a>
+                <a href="./Nginx-9-Load-Balancing.html" ><i class="fa-solid fa-up-right-from-square"></i> Load Balancing</a>
+                <a href="./Nginx-10-Load-Balancing-configuration.html" ><i class="fa-solid fa-up-right-from-square"></i> Load Balancing Configuration</a>
+                <a href="./Nginx-11-Security-Features.html" ><i class="fa-solid fa-up-right-from-square"></i> Security Features</a>
+                <a href="./Nginx-12-Web-Application-Firewall .html" ><i class="fa-solid fa-up-right-from-square"></i> Web Application Firewall</a>
+                <a href="./Nginx-13-WAF-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> WAF in NGINX.</a>
+                <!-- update -->
+                <a href="./Nginx-14-ModSecurity-Configuration.html" ><i class="fa-solid fa-up-right-from-square"></i> ModSecurity Configuration</a>
+                <a href="./Nginx-15-DDoS.html" ><i class="fa-solid fa-up-right-from-square"></i> What is DDos</a>
+                <a href="./Nginx-16-DDoS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> DDos in NGINX</a>
+                <a href="./Nginx-17-SSl-TLS-Termination.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS Termination</a>
+                <a href="./Nginx-18-SSL-TLS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS in NGINX</a>
+                <a href="./Nginx-19-URL-Rewriting.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting</a>
+                <a href="./Nginx-20-URL-Rewriting-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting in NGINX</a>
+                <a href="./Nginx-21-Technologies-Support-to-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i>Technologies Support to Nginx</a>
+                <a href="./Nginx-22-PM2.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2</a>
+                <a href="./Nginx-23-PM2-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2 Commands</a>
+                <a href="./Nginx-24-Why-Configure-FireWall.html" ><i class="fa-solid fa-up-right-from-square"></i>Why Configure FireWall</a>
+                <a href="./Nginx-25-FireWall-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i>FireWall Commands</a>
+                <a href="./Nginx-26-Deploy-Node-Project.html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i>Deploy Node Project</a>
+            </div>
+            <!-- index div end -->
+        </div>
+
+
+        <div id="content-div" class="content-div mb-2">
+            <h1 class="main-title mt5 mb-5">Node.js Deployment in NGINX</h1>
+
+            <p class="description-a-tag  mb-3">You read about what is NGINX and its advantages were before this page. On this page, we give some configuration steps for Node.js project deployment in NGINX with AWS.
+            </p>
+        
+            <a class="content-a-tag">1. Create Free AWS Account</a>
+            <p class="description-a-tag">first of all you should create free AWS Account. Amazon Web Services (AWS) is a comprehensive cloud computing platform provided by Amazon.com. Launched in 2006, AWS offers a wide array of cloud services that cater to businesses, individuals, and organizations, allowing them to access and utilize computing power, storage, and various other resources over the internet. Here we give some steps to create an AWS account</p>
+
+            <p class="description-a-tag"><strong>Go to the AWS Free Tier Page</strong> : Open your web browser and go to the AWS Free Tier page 
+                <a style="text-decoration: none;" href="https://aws.amazon.com/free/" target="_blank">AWS Free Tier</a>
+            </p>
+            <ul>
+                <li class="description-a-tag"><strong>1. Sign in or Create a New Amazon Account</strong> : If you already have an Amazon account, you can sign in with your existing credentials. If not, you'll need to create a new Amazon account. Follow the on-screen instructions to complete the account creation process.</li>
+                <br>
+                <li class="description-a-tag"><strong>2. Fill in the Account Information</strong> : If you already not have an Amazon account,Provide the necessary information, including your contact information and payment details. Although the AWS Free Tier provides a limited amount of resources for free, you'll still need to provide payment information to verify your identity and prevent abuse of the free tier.</li>
+                <br>
+                <li class="description-a-tag"><strong>3. Identity Verification</strong> : AWS may ask you to verify your identity. This can be done through a phone call or text message.</li>
+                <br>
+                <li class="description-a-tag"><strong>4. Choose a Support Plan</strong> : During the sign-up process, AWS may ask you to choose a support plan. For the free tier, you can select the "Basic" plan, which is free.</li>
+                <br>
+                <li class="description-a-tag"><strong>5. Complete Sign-Up</strong> : Once you've provided all the necessary information and completed the sign-up process, your AWS account will be created.</li>
+                <br>
+                <li class="description-a-tag"><strong>6. Access the AWS Management Console</strong> : After creating your account, you can access the AWS Management Console. This is where you can manage your resources, configure services, and access various AWS features.</li>
+                <br>
+                <li class="description-a-tag">Remember that the AWS Free Tier has usage limits, and if you exceed these limits or use services that are not covered by the free tier, you may incur charges. Always review the AWS Free Tier details and pricing information to understand the terms and conditions.</li>
+            </ul>
+
+
+            <a class="content-a-tag">2. Create and Launch an EC2 instance and SSH into machine</a>
+            <p class="description-a-tag">Amazon Elastic Compute Cloud (EC2) is a web service provided by Amazon Web Services (AWS) that allows users to run virtual servers in the cloud. EC2 instances provide scalable compute capacity, allowing you to easily scale up or down based on your application requirements. Here's an overview of key concepts and steps related to Amazon EC2. Steps to Launch an EC2 Instance:</p>
+            <ul>
+                <li class="description-a-tag"><strong>1. Go to the AWS Free Tier Page</strong> : Open your web browser and go to the AWS Free Tier page 
+                    <a href="https://aws.amazon.com/free/" target="_blank">AWS Free Tier</a>
+                </li>
+                <br>
+                <li class="description-a-tag"><strong>2. Sign in to AWS</strong> : Log in to the AWS Management Console.</li>
+                <br>
+                <li class="description-a-tag"><strong>3. Navigate to EC2</strong> : Go to the EC2 dashboard in the AWS Management Console.</li>
+                <br>
+                <li class="description-a-tag"><strong>4. Launch Instance</strong> : Click on the "Launch Instance" button.</li>
+                <br>
+                <li class="description-a-tag"><strong>5. Choose an AMI</strong> : Select an AMI based on your requirements. You can choose from AWS-provided AMIs or custom AMIs.</li>
+                <br>
+                <li class="description-a-tag"><strong>6. Choose an Instance Type</strong> : Select the instance type based on your performance and resource needs.</li>
+                <br>
+                <li class="description-a-tag"><strong>7. Configure Instance</strong> : Configure instance details, including the number of instances, network settings, and storage.</li>
+                <br>
+                <li class="description-a-tag"><strong>8. Add Storage</strong> : Specify the storage volumes for your instance.</li>
+                <br>
+                <li class="description-a-tag"><strong>9. Configure Security Group</strong> : Set up security groups to control inbound and outbound traffic.</li>
+                <br>
+                <li class="description-a-tag"><strong>10. Review and Launch</strong> : Review your configurations and click "Launch."</li>
+                <br>
+                <li class="description-a-tag"><strong>11. Create or Use Key Pair</strong> : Choose an existing key pair or create a new one. This is used for secure SSH access.</li>
+                <br>
+                <li class="description-a-tag"><strong>12. Launch Instance</strong> : Click "Launch" to start the instance.</li>
+
+            </ul>
+            <p class="description-a-tag">Remember to terminate instances when you no longer need them to avoid unnecessary charges. EC2 offers various features and options for customization, making it a versatile solution for hosting applications in the cloud.</p>
+
+    
+            <a class="content-a-tag">3. Connecting to an EC2 Instance</a>
+            <p class="description-a-tag">To connect to an Amazon EC2 instance running Linux, especially for a Node.js project, you'll typically use SSH (Secure Shell). Here's a step-by-step guide assuming you already have an EC2 instance set up:</p>
+
+            <ul>
+
+                <li class="description-a-tag"><strong>1. Locate Your Key Pair</strong> : Ensure you have the private key (.pem file) associated with the key pair used when launching the EC2 instance. If you don't have it, you may need to create a new key pair and download the private key.</li>
+                <br>
+                <li class="description-a-tag"><strong>2. Set Permissions on the Private Key</strong> : Make sure the private key file has the correct permissions to ensure security. You can do this with the following example command </li>
+            </ul>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn0" onclick="codeCopyFunction('code-div0','copy-btn0')">copy</button>
+                    </div>
+                    <div id="code-div0" class="code-div">
+                        <p class="codes">chmod 400 /path/to/your/keypair.pem
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <ul>
+                <li class="description-a-tag"><strong>3. Connect to the EC2 Instance</strong> : Use the `ssh` command to connect to your EC2 instance. Replace `your-instance-ip` with the actual public IP address or DNS name of your EC2 instance, and `/path/to/your/keypair`.pem with the path to your private key file.</li>
+            </ul>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn1" onclick="codeCopyFunction('code-div1','copy-btn1')">copy</button>
+                    </div>
+                    <div id="code-div1" class="code-div">
+                        <p class="codes">ssh -i /path/to/your/keypair.pem ec2-user@your-instance-ip
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <a class="content-a-tag">4. Install Node.js on the EC2 Instance</a>
+            <p class="description-a-tag">Connect to your EC2 instance using SSH, and then install Node.js. You can use a package manager like `yum` for Amazon Linux or `apt` for Ubuntu</p>
+
+            <p class="description-a-tag">For Amazon Linux:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn3" onclick="codeCopyFunction('code-div3','copy-btn3')">copy</button>
+                    </div>
+                    <div id="code-div3" class="code-div">
+                        <p class="codes">sudo yum install -y nodejs
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">For Ubuntu:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn4" onclick="codeCopyFunction('code-div4','copy-btn4')">copy</button>
+                    </div>
+                    <div id="code-div4" class="code-div">
+                        <p class="codes">sudo apt update <br>
+                            sudo apt install -y nodejs
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">5.  Transfer Your Node.js Project</a>
+            <p class="description-a-tag">You can use various methods to transfer your Node.js project to the EC2 instance. The most common two methods are scp (secure copy) and cloning your project from GitHub.You use only any one method</p>
+
+            <p class="description-a-tag"><strong>1. secure copy (scp)</strong></p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn04" onclick="codeCopyFunction('code-div04','copy-btn04')">copy</button>
+                    </div>
+                    <div id="code-div04" class="code-div">
+                        <p class="codes">scp -i /path/to/your/keypair.pem -r /path/to/your/local/project ec2-user@your-instance-ip:/path/on/ec2
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag"><strong>2. Clone your project from Github</strong><br> If Git is not already installed on your EC2 instance, you can install it using the package manager. For example, for Amazon Linux:</p>
+
+            <p class="description-a-tag">If Git is not already installed on your EC2 instance, you can install it using the package manager.</p>
+
+            <p class="description-a-tag">For Amazon Linux:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn5" onclick="codeCopyFunction('code-div5','copy-btn5')">copy</button>
+                    </div>
+                    <div id="code-div5" class="code-div">
+                        <p class="codes">sudo yum install -y git
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">For Ubuntu:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn6" onclick="codeCopyFunction('code-div6','copy-btn6')">copy</button>
+                    </div>
+                    <div id="code-div6" class="code-div">
+                        <p class="codes">sudo apt update <br>
+                            sudo apt install -y git
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">After Clone the GitHub Repository, Navigate to the directory where you want to clone the GitHub repository and use the git clone command. Replace repository-url with the URL of the GitHub repository:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn7" onclick="codeCopyFunction('code-div7','copy-btn7')">copy</button>
+                    </div>
+                    <div id="code-div7" class="code-div">
+                        <p class="codes">git clone repository-url
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">For example:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn8" onclick="codeCopyFunction('code-div8','copy-btn8')">copy</button>
+                    </div>
+                    <div id="code-div8" class="code-div">
+                        <p class="codes">git clone https://github.com/username/repo.git
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- already written -->
+            
+
+
+            <a class="content-a-tag">6. Install Project Dependencies</a>
+            <p class="description-a-tag">Navigate to your project directory and install dependencies. Start your Node.js application.</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn9" onclick="codeCopyFunction('code-div9','copy-btn9')">copy</button>
+                    </div>
+                    <div id="code-div9" class="code-div">
+                        <p class="codes">npm install <br>
+                            npm start
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">7. Start Your Node.js Application With "pm2"</a>
+            <p class="description-a-tag"> Before this page we covered about `pm2`.You might want to use a process manager like pm2 to keep your application running:</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn10" onclick="codeCopyFunction('code-div10','copy-btn10')">copy</button>
+                    </div>
+                    <div id="code-div10" class="code-div">
+                        <p class="codes">npm install -g pm2 <br>
+                            pm2 start your-app.js
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">8. Setup Firewall</a>
+            <p class="description-a-tag">Open the necessary ports in the firewall. Here we give some example commands for enable Firewall, check status of firewall and allow specific ports</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn11" onclick="codeCopyFunction('code-div11','copy-btn11')">copy</button>
+                    </div>
+                    <div id="code-div11" class="code-div">
+                        <p class="codes">sudo ufw enable <br>
+                            sudo ufw status <br>
+                            sudo ufw allow ssh (Port 22) <br>
+                            sudo ufw allow http (Port 80) <br>
+                            sudo ufw allow https (Port 443) <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description">Before this page, we explained in detail about Firewall commands. Those commands will help you understand about firewall Please check this link <a style="text-decoration: none;" href="./Nginx-25-FireWall-Commands.html">Basic FireWall Commands</a></p>
+
+            <a class="content-a-tag">9. Install NGINX and configure</a>
+            <p class="description-a-tag">To install NGINX and configure it for a Node.js project, follow these general steps. Keep in mind that specifics might vary based on your operating system and Node.js application setup.</p>
+
+            <li class="description-a-tag"><strong>1. Install NGINX</strong></li>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn12" onclick="codeCopyFunction('code-div12','copy-btn12')">copy</button>
+                    </div>
+                    <div id="code-div12" class="code-div">
+                        <p class="codes">sudo apt install nginx</p>
+                    </div>
+                </div>
+            </div>
+
+            <li class="description-a-tag"><strong>2. Configure NGINX for Your Node.js Project</strong><br>After install Nginx Create an NGINX server block (virtual host) configuration file. Replace `/etc/nginx/sites-available/myapp` with an appropriate path:</li>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn13" onclick="codeCopyFunction('code-div13','copy-btn13')">copy</button>
+                    </div>
+                    <div id="code-div13" class="code-div">
+                        <p class="codes">sudo nano /etc/nginx/sites-available/myapp</p>
+                    </div>
+                </div>
+            </div>
+
+            <li class="description-a-tag">Add the following configuration. Modify the values of `server_name`, `location`, and `proxy_pass` based on your project details:</li>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn14" onclick="codeCopyFunction('code-div14','copy-btn14')">copy</button>
+                    </div>
+                    <div id="code-div14" class="code-div">
+                        <p class="codes" >server {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;listen 80;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;server_name your_domain_or_server_ip;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;location / {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_pass http://localhost:your_node_app_port;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_http_version 1.1;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_set_header Upgrade $http_upgrade;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_set_header Connection 'upgrade';<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_set_header Host $host;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_cache_bypass $http_upgrade;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        }
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <li><P class="description-a-tag">Replace `your_domain_or_server_ip` with your actual domain or server IP.Replace `your_node_app_port` with the port where your Node.js application is running.</P></li>
+
+                <li class="description-a-tag"><strong>3. Test the NGINX configuration</strong><br>After configuring the file, test the NGINX configuration, This step helps ensure that your NGINX configuration file is free of syntax errors and is structurally correct before applying the changes and potentially causing issues. To test your NGINX configuration, use the following command:</li>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn15" onclick="codeCopyFunction('code-div15','copy-btn15')">copy</button>
+                    </div>
+                    <div id="code-div15" class="code-div">
+                        <p class="codes">sudo nginx -t</p>
+                    </div>
+                </div>
+            </div>
+
+            <li class="description-a-tag"><strong>4. Reload the NGINX</strong><br>This command is used to reload NGINX without stopping it, allowing you to apply configuration changes.</li>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn16" onclick="codeCopyFunction('code-div16','copy-btn16')">copy</button>
+                    </div>
+                    <div id="code-div16" class="code-div">
+                        <p class="codes">sudo nginx -s reload</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">10. Install NGINX and configure</a>
+            <p class="description-a-tag">To add SSL to your NGINX setup using Let's Encrypt, you can use the Certbot tool. Certbot is an easy-to-use tool that automates the process of obtaining and renewing SSL certificates. Here are the steps to add SSL with Let's Encrypt to your NGINX setup:</p>
+
+            <li><p class="description-a-tag"><Strong>1. Install Certbot</Strong></p></li>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn17" onclick="codeCopyFunction('code-div17','copy-btn17')">copy</button>
+                    </div>
+                    <div id="code-div17" class="code-div">
+                        <p class="codes">sudo apt update <br>
+                            sudo apt install certbot
+                            </p>
+                    </div>
+                </div>
+            </div>
+
+            <li><p class="description-a-tag"><Strong>2. Obtain SSL Certificate</Strong><br>
+                Run the following command to obtain an SSL certificate for your domain</p></li>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn18" onclick="codeCopyFunction('code-div18','copy-btn18')">copy</button>
+                    </div>
+                    <div id="code-div18" class="code-div">
+                        <p class="codes">sudo certbot --nginx -d your_domain_or_server_ip</p>
+                    </div>
+                </div>
+            </div>
+            <li><p class="description-a-tag">Follow the interactive prompts to configure Certbot. It will automatically detect your NGINX setup and ask for your email address for renewal notifications.</p></li>
+
+            <li><p class="description-a-tag"><Strong>2. Automatically Renew Certificates</Strong><br>Certbot will automatically set up a cron job to renew your certificates. However, it's a good practice to test the renewal process manually.If the dry run succeeds, it means the automatic renewal process is set up correctly.</p></li>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn19" onclick="codeCopyFunction('code-div19','copy-btn19')">copy</button>
+                    </div>
+                    <div id="code-div19" class="code-div">
+                        <p class="codes">sudo certbot renew --dry-run</p>
+                    </div>
+                </div>
+            </div>
+            <li><p class="description-a-tag">Follow the interactive prompts to configure Certbot. It will automatically detect your NGINX setup and ask for your email address for renewal notifications.</p></li>
+
+            <li><p class="description-a-tag"><Strong>2. Test Your SSL Configuration</Strong><br>Restart NGINX to apply the changes.</p></li>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn20" onclick="codeCopyFunction('code-div20','copy-btn20')">copy</button>
+                    </div>
+                    <div id="code-div20" class="code-div">
+                        <p class="codes">sudo systemctl reload nginx
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <li><p class="description-a-tag">Visit your site using `https://your_domain_or_server_ip` in a web browser to verify that SSL is working correctly.your NGINX server is configured with SSL using a Let's Encrypt certificate. Certbot will automatically handle the renewal of your SSL certificates, providing a secure connection to your Node.js application.</p></li>
+
+            <p class="description">This guide provides a basic setup. Adjust configurations, security settings, and NGINX parameters based on your specific project requirements. Ensure your security groups and firewall rules allow traffic on ports 80 and any other ports your Node.js application uses.</p>
+            <div class="next-prev-div mb-5 mt-5">
+                <a title="FireWall Commands" href="./Nginx-25-FireWall-Commands.html" class="next-prev-button">Previous</a>
+                <a id="next-page-center">END</a>
+                <a readonly="true" class="next-prev-button">Next</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Main div end -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

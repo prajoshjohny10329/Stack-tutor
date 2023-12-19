@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Tutor</title>
+    <link rel="icon" type="image" href="./images/st Logo png.PNG">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24bccd4d50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-navbar">
+        <div class="main-navbar-first">
+            <button id="list-button" class="list-button"><i id="list-i"  class="fa-solid fa-list"></i></button>
+            <button id="mood-change" onclick="modeChanger()">
+                <i id="mood-i" style='font-size:24px' class='fas'>&#xf186;</i>
+            </button>
+        </div>
+        <div class="main-navbar-second">
+            <a href="/"><img class="brand-logo" src="./images/blue logo png .png" alt="stack tutor logo"></a>
+        </div>
+        <div class="main-navbar-third">
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="result-box">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- top category-->
+    <div id="category-div" class="category-div">
+        <a href="./Nginx-1-intro.html">Nginx</a>
+        <a href="./coming-soon.html">Java Script</a>
+        <a href="./coming-soon.html">React JS</a>
+        <a href="./coming-soon.html">Node JS</a>
+        <a href="./coming-soon.html">Angular JS</a>
+        <a href="./coming-soon.html">Mongo DB</a>
+        <a href="./coming-soon.html">Nginx</a>
+        <a href="./coming-soon.html">AWS</a>
+        <a href="./coming-soon.html">JAVA</a>
+        <a href="./coming-soon.html">Python</a>
+        <a href="./coming-soon.html">Type Script </a>
+    </div>
+    <!-- top category end -->
+
+    <!-- Main div -->
+    <div id="main-div">
+        <div id="list-div" class="index-div">
+
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="small-input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                </div>
+                <div id="index-result-box">
+                </div>
+            </div>
+            <br>
+
+            <!-- index div -->
+            <h6 class="index-title">NGINX Index</h6>
+            <div class="index-future-link">
+                <a href="./Nginx-1-intro.html" ><i class="fa-solid fa-up-right-from-square"></i> Nginx Introduction</a>
+                <a href="./Nginx-2-C10k.html"> <i class="fa-solid fa-up-right-from-square"></i> C10k Problem</a>
+                <a href="./Nginx-3-High Performance.html"><i class="fa-solid fa-up-right-from-square"></i> High Performance</a>
+                <a href="./Nginx-4-Reverse Proxy.html" ><i class="fa-solid fa-up-right-from-square"></i> Reverse Proxy</a>
+                <a href="./Nginx-5-caching.html"><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
+                <a href="./Nginx-6-Types-caching.html" ><i class="fa-solid fa-up-right-from-square"></i> Types of Caching</a>
+                <a href="./Nginx-7-Proxy caching.html"><i class="fa-solid fa-up-right-from-square"></i> Proxy caching</a>
+                <a href="./Nginx-8-Proxy-caching-config.html"><i class="fa-solid fa-up-right-from-square"></i> Configuring proxy caching</a>
+                <a href="./Nginx-9-Load-Balancing.html" ><i class="fa-solid fa-up-right-from-square"></i> Load Balancing</a>
+                <a href="./Nginx-10-Load-Balancing-configuration.html"><i class="fa-solid fa-up-right-from-square"></i> Load Balancing Configuration</a>
+                <a href="./Nginx-11-Security-Features.html" ><i class="fa-solid fa-up-right-from-square"></i> Security Features</a>
+                <a href="./Nginx-12-Web-Application-Firewall .html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> Web Application Firewall</a>
+                <a href="./Nginx-13-WAF-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> WAF in NGINX.</a>
+                <!-- update -->
+                <a href="./Nginx-14-ModSecurity-Configuration.html" ><i class="fa-solid fa-up-right-from-square"></i> ModSecurity Configuration</a>
+                <a href="./Nginx-15-DDoS.html" ><i class="fa-solid fa-up-right-from-square"></i> What is DDos</a>
+                <a href="./Nginx-16-DDoS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> DDos in NGINX</a>
+                <a href="./Nginx-17-SSl-TLS-Termination.html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> SSl TLS Termination</a>
+                <a href="./Nginx-18-SSL-TLS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS in NGINX</a>
+                <a href="./Nginx-19-URL-Rewriting.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting</a>
+                <a href="./Nginx-20-URL-Rewriting-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting in NGINX</a>
+                <a href="./Nginx-21-Technologies-Support-to-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i>Technologies Support to Nginx</a>
+                <a href="./Nginx-22-PM2.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2</a>
+                <a href="./Nginx-23-PM2-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2 Commands</a>
+                <a href="./Nginx-24-Why-Configure-FireWall.html" ><i class="fa-solid fa-up-right-from-square"></i>Why Configure FireWall</a>
+                <a href="./Nginx-25-FireWall-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i>FireWall Commands</a>
+                <a href="./Nginx-26-Deploy-Node-Project.html" ><i class="fa-solid fa-up-right-from-square"></i>Deploy Node Project</a>
+            </div>
+            <!-- index div end -->
+        </div>
+
+
+        <div id="content-div" class="content-div mb-2">
+            <h1 class="main-title mt5 mb-5">SSL/TLS Termination </h1>
+
+            <p class="description-a-tag  mb-3">SSL/TLS termination can be a bit technical, but let's break it down for beginners in a simpler way</p>
+
+
+            <a class="content-a-tag">1. What is SSL/TLS?</a>
+            <p class="description-a-tag">SSL (Secure Sockets Layer) and its successor TLS (Transport Layer Security) are protocols that provide secure communication over the internet. They ensure that the data exchanged between your computer and a website is encrypted, making it harder for unauthorized parties to access or tamper with the information.</p>
+
+            <a class="content-a-tag">2. SSL/TLS Handshake</a>
+            <p class="description-a-tag">When you connect to a secure website  (https://) or (https://www.flipkart.com/), your browser and the website's server go through a process called the SSL/TLS handshake. During this handshake, they agree on a secret "language" (encryption algorithm) to use for secure communication.
+            </p>
+
+            <a class="content-a-tag">3. SSL/TLS Termination</a>
+            <p class="description-a-tag">SSL/TLS termination is like having a security guard at the entrance of a building. Imagine you want to enter a museum (the web server). The security guard (SSL/TLS termination point) checks your ID (SSL/TLS certificate), verifies it, and then lets you into the museum. Once you're inside, you can talk to different people (backend servers) without going through the security check again.</p>
+            
+
+            <a class="content-a-tag">4.  SSL/TLS Termination Point</a>
+            <p class="description-a-tag">The SSL/TLS termination point is like the security guard in our analogy. It's a special server or device that handles the secure communication part. When you connect to a website, this point decrypts the incoming secure traffic, reads the information, and then sends the unencrypted data to the actual web server.</p>
+
+            <a class="content-a-tag">5. Benefits of SSL/TLS Termination</a>
+            <p class="description-a-tag">SSL/TLS termination improves security, enhances performance, and simplifies management by centralizing the handling of SSL/TLS encryption and offloading associated processing from backend servers to a dedicated termination point. Here we give some benefits of SSL/TLS Termination</p>
+            <ul>
+                <li class="description-a-tag"><strong>Centralized Security Check</strong> :  Instead of each web server doing the security check, the termination point does it for all of them. This makes it easier to manage security.
+                </li>
+                <br>
+                <li class="description-a-tag"><strong>Improve Performance </strong> : Decrypting and encrypting data can be a bit like solving puzzles. By letting a dedicated termination point handle this work, the web servers can focus on their main job, making the overall system faster.</li>
+                <br>
+                <li class="description-a-tag"><strong>Certificate Management </strong> : SSL/TLS certificates can expire or need updates. Managing these certificates in one place (the termination point) is simpler than updating them on every web server.</li>
+                <br>
+
+                <li class="description-a-tag"><strong>Offloading SSL/TLS Processing </strong> : SSL/TLS encryption and decryption processes can be computationally intensive. By offloading these processes from backend servers to a dedicated termination point, the overall system performance can be improved. Backend servers can focus on processing application logic without the overhead of SSL/TLS encryption.</li>
+                <br>
+                <li class="description-a-tag"><strong>Load Balancing </strong> : SSL/TLS certificates can expire or need updates. Managing these certificates in one place (the termination point) is simpler than updating them on every web server.</li>
+                <br>
+                <li class="description-a-tag"><strong>Security Policy Enforcement </strong> : The termination point can enforce security policies consistently across all backend servers. It can perform tasks such as validating client certificates, implementing security headers, and applying security policies. This ensures a uniform security posture throughout the infrastructure.</li>
+                <br>
+                <li class="description-a-tag"><strong>Simplified Application Configuration </strong> : Application servers don't need to be configured to handle SSL/TLS directly. They can operate with plain HTTP, and the termination point takes care of converting HTTPS traffic to HTTP before forwarding it to the backend servers. This simplifies the application server configuration and reduces the complexity of managing SSL/TLS settings at the application level.</li>
+                <br>
+                <li class="description-a-tag"><strong>HTTP and HTTPS Traffic Management </strong> : With SSL/TLS termination, the termination point can manage both HTTP and HTTPS traffic. It can redirect HTTP traffic to HTTPS, enforce secure communication, and handle any necessary protocol translations. This flexibility allows for the implementation of various security measures and optimizations.</li>
+                <br>
+                <li class="description-a-tag"><strong>Easier Certificate Renewal </strong> : SSL/TLS certificates have a finite validity period and need to be renewed periodically. Managing certificate renewal becomes simpler when it only needs to be done in one place, at the SSL/TLS termination point, rather than on each application server.</li>
+                <br>
+                <li class="description-a-tag"><strong>Logging and Monitoring: </strong> : SSL/TLS termination points often provide logging and monitoring features. This facilitates the detection of potential security issues, such as suspicious traffic patterns or attempts to exploit vulnerabilities.</li>
+                <br>
+            </ul>
+
+            <a class="content-a-tag">6. How SSL/TLS Termination Works</a>
+            <p class="description-a-tag">
+                When you access a secure website, your browser talks to the SSL/TLS termination point first. This point decrypts the information, reads it, and then passes the unencrypted data to the web server. After that, any communication between your browser and the web server happens without encryption. Here we give some example of how it works:</p>
+                <ul>
+                    <li class="description-a-tag"><strong>Example </strong> : You want to buy something online (communicate with a web server). The SSL/TLS termination point is like the cashier at the store's entrance. You give your credit card (encrypted data) to the cashier, who decrypts it, reads the information, and then passes the unencrypted details to the actual cashier (web server) who completes the transaction.
+                    </li>
+                </ul>
+
+            <p class="description">SSL/TLS termination is a strategy that makes secure communication more efficient by concentrating the security checks in one place and allowing the rest of the communication to happen without encryption within the protected environment.</p>
+
+            <div class="next-prev-div mb-5 mt-5">
+                <a title="DDoS in NGINX" href="./Nginx-16-DDoS-Nginx.html" class="next-prev-button">Previous</a>
+                <a title="Next topic about SSl TLS in NGINX" id="next-page-center" href="./Nginx-18-SSL-TLS-Nginx.html">SSl TLS in NGINX</a>
+                <a title="Next topic about SSl TLS in NGINX" href="./Nginx-18-SSL-TLS-Nginx.html" class="next-prev-button">Next</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Main div end -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

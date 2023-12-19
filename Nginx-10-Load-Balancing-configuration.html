@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Tutor</title>
+    <link rel="icon" type="image" href="./images/st Logo png.PNG">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24bccd4d50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-navbar">
+        <div class="main-navbar-first">
+            <button id="list-button" class="list-button"><i id="list-i"  class="fa-solid fa-list"></i></button>
+            <button id="mood-change" onclick="modeChanger()">
+                <i id="mood-i" style='font-size:24px' class='fas'>&#xf186;</i>
+            </button>
+        </div>
+        <div class="main-navbar-second">
+            <a href="/"><img class="brand-logo" src="./images/blue logo png .png" alt="stack tutor logo"></a>
+        </div>
+        <div class="main-navbar-third">
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="result-box">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- top category-->
+    <div id="category-div" class="category-div">
+        <a href="./Nginx-1-intro.html">Nginx</a>
+        <a href="./coming-soon.html">Java Script</a>
+        <a href="./coming-soon.html">React JS</a>
+        <a href="./coming-soon.html">Node JS</a>
+        <a href="./coming-soon.html">Angular JS</a>
+        <a href="./coming-soon.html">Mongo DB</a>
+        <a href="./coming-soon.html">Nginx</a>
+        <a href="./coming-soon.html">AWS</a>
+        <a href="./coming-soon.html">JAVA</a>
+        <a href="./coming-soon.html">Python</a>
+        <a href="./coming-soon.html">Type Script </a>
+    </div>
+    <!-- top category end -->
+
+    <!-- Main div -->
+    <div id="main-div">
+        <div id="list-div" class="index-div">
+
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="small-input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                </div>
+                <div id="index-result-box">
+                </div>
+            </div>
+            <br>
+
+            <!-- index div -->
+            <h6 class="index-title">NGINX Index</h6>
+            <div class="index-future-link">
+                <a href="./Nginx-1-intro.html" ><i class="fa-solid fa-up-right-from-square"></i> Nginx Introduction</a>
+                <a href="./Nginx-2-C10k.html"> <i class="fa-solid fa-up-right-from-square"></i> C10k Problem</a>
+                <a href="./Nginx-3-High Performance.html"><i class="fa-solid fa-up-right-from-square"></i> High Performance</a>
+                <a href="./Nginx-4-Reverse Proxy.html" ><i class="fa-solid fa-up-right-from-square"></i> Reverse Proxy</a>
+                <a href="./Nginx-5-caching.html"><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
+                <a href="./Nginx-6-Types-caching.html" ><i class="fa-solid fa-up-right-from-square"></i> Types of Caching</a>
+                <a href="./Nginx-7-Proxy caching.html"><i class="fa-solid fa-up-right-from-square"></i> Proxy caching</a>
+                <a href="./Nginx-8-Proxy-caching-config.html"><i class="fa-solid fa-up-right-from-square"></i> Configuring proxy caching</a>
+                <a href="./Nginx-9-Load-Balancing.html" ><i class="fa-solid fa-up-right-from-square"></i> Load Balancing</a>
+                <a href="./Nginx-10-Load-Balancing-configuration.html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> Load Balancing Configuration</a>
+                <a href="./Nginx-11-Security-Features.html" ><i class="fa-solid fa-up-right-from-square"></i> Security Features</a>
+                <a href="./Nginx-12-Web-Application-Firewall .html" ><i class="fa-solid fa-up-right-from-square"></i> Web Application Firewall</a>
+                <a href="./Nginx-13-WAF-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> WAF in NGINX.</a>
+                <!-- update -->
+                <a href="./Nginx-14-ModSecurity-Configuration.html" ><i class="fa-solid fa-up-right-from-square"></i> ModSecurity Configuration</a>
+                <a href="./Nginx-15-DDoS.html" ><i class="fa-solid fa-up-right-from-square"></i> What is DDos</a>
+                <a href="./Nginx-16-DDoS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> DDos in NGINX</a>
+                <a href="./Nginx-17-SSl-TLS-Termination.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS Termination</a>
+                <a href="./Nginx-18-SSL-TLS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS in NGINX</a>
+                <a href="./Nginx-19-URL-Rewriting.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting</a>
+                <a href="./Nginx-20-URL-Rewriting-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting in NGINX</a>
+                <a href="./Nginx-21-Technologies-Support-to-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i>Technologies Support to Nginx</a>
+                <a href="./Nginx-22-PM2.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2</a>
+                <a href="./Nginx-23-PM2-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2 Commands</a>
+                <a href="./Nginx-24-Why-Configure-FireWall.html" ><i class="fa-solid fa-up-right-from-square"></i>Why Configure FireWall</a>
+                <a href="./Nginx-25-FireWall-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i>FireWall Commands</a>
+                <a href="./Nginx-26-Deploy-Node-Project.html" ><i class="fa-solid fa-up-right-from-square"></i>Deploy Node Project</a>
+            </div>
+            <!-- index div end -->
+        </div>
+
+
+        <div id="content-div" class="content-div mb-2">
+            <h1 class="main-title mt5 mb-5">Load Balancing Configuration</h1>
+
+            <p class="description-a-tag  mb-3">You read about what Load Balancing is and what its advantages were before this page. Nginx can handle load balancing by distributing incoming web traffic across multiple backend servers. This is achieved by configuring Nginx as a reverse proxy. Here's a step-by-step explanation of how Nginx handles load balancing:
+            </p>
+
+            <a class="content-a-tag">1. Install Nginx</a>
+            <p class="description-a-tag">
+                 First, you need to install Nginx on a server that will act as the load balancer. You can do this using your system's package manager. For example, on Ubuntu, you can use the following commands:</p>
+
+                 <div class="code-box">
+                    <div class="code-panel">
+                        <div class="copy-code-div">
+                            <h6 class="which-cmd">bash</h6>
+                        <button class="copy-code" id="copy-btn" onclick="codeCopyFunction('code-div','copy-btn')">copy</button>
+                        </div>
+                        <div id="code-div" class="code-div">
+                            <p>sudo apt update<br>sudo apt install nginx</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            <a class="content-a-tag">2. Configure Nginx for Load Balancing</a>
+            <p class="description-a-tag">After installing Nginx, you need to configure it to perform load balancing. Nginx's configuration is typically stored in one or more files located in the ` /etc/nginx/ ` directory. The main configuration file is usually named ` nginx.conf `.</p>
+
+            <a class="content-a-tag">3. Define an Upstream Block</a>
+            <p class="description-a-tag"> In the Nginx configuration file, you need to define an "upstream" block. This block specifies the backend servers that Nginx will distribute traffic to. Here's an example of an upstream block:</p>
+            
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">Nginx</h6>
+                    <button class="copy-code" id="copy-btn1" onclick="codeCopyFunction('code-div1','copy-btn1')">copy</button>
+                    </div>
+                    <div id="code-div1" class="code-div">
+                        <p >upstream backend_servers {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;server server1.example.com;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;server server2.example.com;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;server server3.example.com;<br>
+                        }</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="description-a-tag">In this example, we define an upstream block named backend_servers with three backend servers (you should replace these with your own server addresses).</p>
+
+            <a class="content-a-tag">4. Create a Server Block</a>
+            <p class="description-a-tag">Next step is, you create a server block that configures how Nginx handles incoming requests and proxies them to the backend servers. Here's a basic example:</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">Nginx</h6>
+                    <button class="copy-code" id="copy-btn2" onclick="codeCopyFunction('code-div2','copy-btn2')">copy</button>
+                    </div>
+                    <div id="code-div2" class="code-div">
+                        <p >server {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;listen 80;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;server_name your-domain.com;<br>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;location / {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_pass http://backend_servers;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        }</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">In this configuration:</p>
+
+
+            <ul>
+                <li class="description-a-tag"><strong>`listen 80` </strong> specifies that Nginx should listen on port 80 for incoming all HTTP requests.</li>
+                <br>
+                <li class="description-a-tag"><strong>`server_name your-domain.com` </strong> defines  the domain name or IP address that Nginx should handle.</li>
+                <br>
+                <li class="description-a-tag"><strong>`listen 80` </strong> specifies that Nginx should listen on port 80 for incoming all HTTP requests.</li>
+                <br>
+                <li class="description-a-tag"><strong>`location /` </strong> specifies that all requests should be proxied.</li>
+                <br>
+                <li class="description-a-tag"><strong>proxy_pass http://backend_servers` </strong> tells Nginx to pass the requests to the upstream block we defined earlier.</li>
+                
+            </ul>
+
+
+            <a class="content-a-tag">5. Load Balancing Method</a>
+            <p class="description-a-tag">By default, Nginx uses a round-robin load balancing method, meaning it distributes requests evenly among the backend servers. You can also specify other load balancing methods, such as `least_conn`, `ip_hash`, or `hash` to suit your needs. Here's an example of specifying a load balancing method:</p>
+
+            <ul>
+                
+                <li class="description-a-tag"><strong>`least_conn` </strong>  Distributes requests to servers with the least number of active connections.</li>
+                <br>
+                <li class="description-a-tag"><strong>`ip_hash` </strong> Uses the client's IP address to consistently route requests to the same backend server.</li>
+                <br>
+                
+            </ul>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">Nginx</h6>
+                    <button class="copy-code" id="copy-btn3" onclick="codeCopyFunction('code-div3','copy-btn3')">copy</button>
+                    </div>
+                    <div id="code-div3" class="code-div">
+                        <p >upstream backend_servers {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;least_conn;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;server server1.example.com;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;server server2.example.com;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;server server3.example.com;<br>
+                            }
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">6. Test and Reload Nginx</a>
+            <p class="description-a-tag">
+                 Before applying the configuration, it's a good practice to test it for syntax errors:</p>
+
+                 <div class="code-box">
+                    <div class="code-panel">
+                        <div class="copy-code-div">
+                            <h6 class="which-cmd">bash</h6>
+                        <button class="copy-code" id="copy-btn4" onclick="codeCopyFunction('code-div4','copy-btn4')">copy</button>
+                        </div>
+                        <div id="code-div4" class="code-div">
+                            <p >sudo nginx -t</p>
+                        </div>
+                    </div>
+                </div>
+
+            <p class="description-a-tag">
+                If there are no errors, you can reload Nginx to apply the changes:</p>
+
+                <div class="code-box">
+                    <div class="code-panel">
+                        <div class="copy-code-div">
+                            <h6 class="which-cmd">bash</h6>
+                        <button class="copy-code" id="copy-btn5" onclick="codeCopyFunction('code-div5','copy-btn5')">copy</button>
+                        </div>
+                        <div id="code-div5" class="code-div">
+                            <p >sudo systemctl reload nginx</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            <p class="description">
+                Now, Nginx will distribute incoming web traffic among the backend servers based on your load balancing configuration. Make sure to adjust your DNS settings to point to the Nginx load balancer's IP address, and ensure that your backend servers are properly configured to handle the distributed requests.</p>
+            <div class="next-prev-div mb-5 mt-5">
+                <a title="Load Balancing" href="./Nginx-9-Load-Balancing.html" class="next-prev-button">Previous</a>
+                <a title="Next topic about Security Features" id="next-page-center" href="./Nginx-11-Security-Features.html">Security Features</a>
+                <a title="Next topic about Security Features" href="./Nginx-11-Security-Features.html" class="next-prev-button">Next</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Main div end -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

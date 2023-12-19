@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Tutor</title>
+    <link rel="icon" type="image" href="./images/st Logo png.PNG">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24bccd4d50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-navbar">
+        <div class="main-navbar-first">
+            <button id="list-button" class="list-button"><i id="list-i"  class="fa-solid fa-list"></i></button>
+            <button id="mood-change" onclick="modeChanger()">
+                <i id="mood-i" style='font-size:24px' class='fas'>&#xf186;</i>
+            </button>
+        </div>
+        <div class="main-navbar-second">
+            <a href="/"><img class="brand-logo" src="./images/blue logo png .png" alt="stack tutor logo"></a>
+        </div>
+        <div class="main-navbar-third">
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="result-box">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- top category-->
+    <div id="category-div" class="category-div">
+        <a href="./Nginx-1-intro.html">Nginx</a>
+        <a href="./coming-soon.html">Java Script</a>
+        <a href="./coming-soon.html">React JS</a>
+        <a href="./coming-soon.html">Node JS</a>
+        <a href="./coming-soon.html">Angular JS</a>
+        <a href="./coming-soon.html">Mongo DB</a>
+        <a href="./coming-soon.html">Nginx</a>
+        <a href="./coming-soon.html">AWS</a>
+        <a href="./coming-soon.html">JAVA</a>
+        <a href="./coming-soon.html">Python</a>
+        <a href="./coming-soon.html">Type Script </a>
+    </div>
+    <!-- top category end -->
+
+    <!-- Main div -->
+    <div id="main-div">
+        <div id="list-div" class="index-div">
+
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="small-input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                </div>
+                <div id="index-result-box">
+                </div>
+            </div>
+            <br>
+
+            <!-- index div -->
+            <h6 class="index-title">NGINX Index</h6>
+            <div class="index-future-link">
+                <a href="./Nginx-1-intro.html" ><i class="fa-solid fa-up-right-from-square"></i> Nginx Introduction</a>
+                <a href="./Nginx-2-C10k.html"> <i class="fa-solid fa-up-right-from-square"></i> C10k Problem</a>
+                <a href="./Nginx-3-High Performance.html"><i class="fa-solid fa-up-right-from-square"></i> High Performance</a>
+                <a href="./Nginx-4-Reverse Proxy.html" ><i class="fa-solid fa-up-right-from-square"></i> Reverse Proxy</a>
+                <a href="./Nginx-5-caching.html"><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
+                <a href="./Nginx-6-Types-caching.html" ><i class="fa-solid fa-up-right-from-square"></i> Types of Caching</a>
+                <a href="./Nginx-7-Proxy caching.html"><i class="fa-solid fa-up-right-from-square"></i> Proxy caching</a>
+                <a href="./Nginx-8-Proxy-caching-config.html"><i class="fa-solid fa-up-right-from-square"></i> Configuring proxy caching</a>
+                <a href="./Nginx-9-Load-Balancing.html" ><i class="fa-solid fa-up-right-from-square"></i> Load Balancing</a>
+                <a href="./Nginx-10-Load-Balancing-configuration.html" ><i class="fa-solid fa-up-right-from-square"></i> Load Balancing Configuration</a>
+                <a href="./Nginx-11-Security-Features.html" ><i class="fa-solid fa-up-right-from-square"></i> Security Features</a>
+                <a href="./Nginx-12-Web-Application-Firewall .html" ><i class="fa-solid fa-up-right-from-square"></i> Web Application Firewall</a>
+                <a href="./Nginx-13-WAF-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> WAF in NGINX.</a>
+                <!-- update -->
+                <a href="./Nginx-14-ModSecurity-Configuration.html" ><i class="fa-solid fa-up-right-from-square"></i> ModSecurity Configuration</a>
+                <a href="./Nginx-15-DDoS.html" ><i class="fa-solid fa-up-right-from-square"></i> What is DDos</a>
+                <a href="./Nginx-16-DDoS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> DDos in NGINX</a>
+                <a href="./Nginx-17-SSl-TLS-Termination.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS Termination</a>
+                <a href="./Nginx-18-SSL-TLS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS in NGINX</a>
+                <a href="./Nginx-19-URL-Rewriting.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting</a>
+                <a href="./Nginx-20-URL-Rewriting-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting in NGINX</a>
+                <a href="./Nginx-21-Technologies-Support-to-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i>Technologies Support to Nginx</a>
+                <a href="./Nginx-22-PM2.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2</a>
+                <a href="./Nginx-23-PM2-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2 Commands</a>
+                <a href="./Nginx-24-Why-Configure-FireWall.html" ><i class="fa-solid fa-up-right-from-square"></i>Why Configure FireWall</a>
+                <a href="./Nginx-25-FireWall-Commands.html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i>FireWall Commands</a>
+                <a href="./Nginx-26-Deploy-Node-Project.html" ><i class="fa-solid fa-up-right-from-square"></i>Deploy Node Project</a>
+            </div>
+            <!-- index div end -->
+        </div>
+
+
+        <div id="content-div" class="content-div mb-2">
+            <h1 class="main-title mt5 mb-5">Firewall Configure Commands</h1>
+
+            <p class="description-a-tag  mb-3">Configuring a firewall involves defining rules that specify what type of network traffic is allowed or denied. Here are ten commonly used commands for configuring a firewall using the Uncomplicated Firewall (UFW) on Linux. Make sure to adjust these commands based on your specific requirements
+            </p>
+
+            <a class="content-a-tag">1. Enable UFW</a>
+            <p class="description-a-tag">When you run `sudo ufw enable`, it activates the firewall and sets it to start at boot time. This means that the firewall rules you have configured with ufw will be applied, and the firewall will be active to help secure your system.</p>
+            <div class="code-box" title="For Ubuntu/Debian">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn" onclick="codeCopyFunction('code-div','copy-btn')">copy</button>
+                    </div>
+                    <div id="code-div" class="code-div">
+                        <p>sudo ufw <span class="text-warning"> enable</span> </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <a class="content-a-tag">2. Disable UFW</a>
+            <p class="description-a-tag">The `sudo ufw disable` command is used to deactivate or disable the Uncomplicated Firewall (ufw) on a Linux system. When you disable ufw, it stops applying the configured firewall rules, allowing all network traffic to pass through without any restrictions imposed by the firewall.Disabling the firewall can be useful in certain situations, such as troubleshooting network connectivity issues or temporarily allowing unrestricted access to all services. However, it's important to exercise caution when disabling the firewall, as it can potentially expose your system to security risks.</p>
+            <div class="code-box" title="For Ubuntu/Debian">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn1" onclick="codeCopyFunction('code-div1','copy-btn1')">copy</button>
+                    </div>
+                    <div id="code-div1" class="code-div">
+                        <p>sudo ufw <span class="text-warning"> disable</span>  
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="description-a-tag">If you no longer need the firewall to be disabled, it's a good practice to re-enable it using the `sudo ufw enable` command after you have resolved the issues or completed the tasks that required the firewall to be disabled.Always ensure that you have proper firewall rules in place to secure your system before enabling or disabling the firewall. </p>
+
+            <a class="content-a-tag">3. Reset UFW Rules</a>
+            <p class="description-a-tag">The sudo ufw reset command is used to reset the Uncomplicated Firewall (ufw) to its default settings. When you run this command, it removes all custom rules that you have configured and resets the firewall to its default state.This command is useful if you want to start with a clean slate and remove any customizations or rules that might have been added to the firewall.</p>
+            <div class="code-box" title="For Ubuntu/Debian">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn2" onclick="codeCopyFunction('code-div2','copy-btn2')">copy</button>
+                    </div>
+                    <div id="code-div2" class="code-div">
+                        <p>sudo ufw reset
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="description-a-tag">After running `sudo ufw reset`, you might want to reconfigure your firewall rules using the appropriate `sudo ufw allow` and `sudo ufw deny` commands to permit or block specific types of traffic based on your requirements.</p>
+
+            <a class="content-a-tag">4. Check Status</a>
+            <p class="description-a-tag">The `sudo ufw status` command is used to display the current status and rules of the Uncomplicated Firewall (ufw) on a Linux system. When you run this command with administrative privileges, it will show you a list of configured rules, along with their status.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn19" onclick="codeCopyFunction('code-div19','copy-btn19')">copy</button>
+                    </div>
+                    <div id="code-div19" class="code-div">
+                        <p >sudo ufw status
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">5. Allow Incoming Traffic on a Specific Port </a>
+            <p class="description-a-tag">The command `sudo ufw allow 80` is used to allow incoming traffic on port 80 using the Uncomplicated Firewall (ufw) on a Linux system. Port 80 is the default port for HTTP traffic, and by allowing traffic on this port, you are permitting incoming connections to web servers.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn3" onclick="codeCopyFunction('code-div3','copy-btn3')">copy</button>
+                    </div>
+                    <div id="code-div3" class="code-div">
+                        <p >sudo ufw allow 80
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">6. Allow Incoming Traffic on a Specific Port with Protocol</a>
+            <p class="description-a-tag">To allow incoming traffic on a specific port with a specified protocol using Uncomplicated Firewall (ufw), you can use the `sudo ufw allow` command with the port number and protocol specified. Here's the general syntax:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn4" onclick="codeCopyFunction('code-div4','copy-btn4')">copy</button>
+                    </div>
+                    <div id="code-div4" class="code-div">
+                        <p>sudo ufw allow [PORT]/[PROTOCOL]
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="description-a-tag">Replace <strong>`[PORT]`</strong>  with the port number you want to allow and <strong>`[PROTOCOL]`</strong> with the protocol (e.g., tcp, udp).</p>
+            <p class="description-a-tag">For example, to allow incoming TCP traffic on port 124, you would use:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn5" onclick="codeCopyFunction('code-div5','copy-btn5')">copy</button>
+                    </div>
+                    <div id="code-div5" class="code-div">
+                        <p>sudo ufw allow 124/tcp
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="description-a-tag">If you want to allow incoming UDP traffic on the same port, you would use</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn6" onclick="codeCopyFunction('code-div6','copy-btn6')">copy</button>
+                    </div>
+                    <div id="code-div6" class="code-div">
+                        <p>sudo ufw allow 124/udp
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="description-a-tag">This way, you can specify the protocol along with the port to create more specific rules.</p>
+
+
+            <a class="content-a-tag">7. Allow All Incoming Traffic from a Specific IP Address</a>
+            <p class="description-a-tag">The command `sudo ufw allow from 192.168.1.2` is used to allow incoming traffic from a specific IP address (192.168.1.2 in this case) using the Uncomplicated Firewall (ufw) on a Linux system. This command opens up the firewall to accept incoming connections from the specified IP address.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn7" onclick="codeCopyFunction('code-div7','copy-btn7')">copy</button>
+                    </div>
+                    <div id="code-div7" class="code-div">
+                        <p >sudo ufw allow from 192.168.1.2</p>
+                    </div>
+                </div>
+            </div>
+            <p class="description-a-tag">If you want to further refine the rule by specifying a port or protocol, you can do so by extending the command. For example, this would allow incoming traffic from 192.168.1.2 to the specified port 80.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn8" onclick="codeCopyFunction('code-div8','copy-btn8')">copy</button>
+                    </div>
+                    <div id="code-div8" class="code-div">
+                        <p>sudo ufw allow from 192.168.1.2 to any port 80</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">8. Deny Incoming Traffic on a Specific Port</a>
+            <p class="description-a-tag">The command `sudo ufw deny 443` is used to deny incoming traffic on port 443 using the Uncomplicated Firewall (ufw) on a Linux system. Port 443 is commonly used for HTTPS traffic, and denying connections on this port would prevent incoming traffic over the HTTPS protocol.After running this command, connections attempting to access the system on port 443 will be blocked by the firewall. </p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn9" onclick="codeCopyFunction('code-div9','copy-btn9')">copy</button>
+                    </div>
+                    <div id="code-div9" class="code-div">
+                        <p>sudo ufw deny 443</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">9. Delete a Rule with Position</a>
+            <p class="description-a-tag">After running this command, the rule at position 3 in the list of rules will be removed from the firewall configuration. </p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn10" onclick="codeCopyFunction('code-div10','copy-btn10')">copy</button>
+                    </div>
+                    <div id="code-div10" class="code-div">
+                        <p>sudo ufw delete 3</p>
+                    </div>
+                </div>
+            </div>
+            <p class="description-a-tag">Be cautious when using the delete command, as removing the wrong rule could impact network connectivity or compromise security. Always review your rules and confirm the rule number before deleting it.</p>
+
+            <a class="content-a-tag">10. Show UFW Rules with Numbers</a>
+            <p class="description-a-tag">The `sudo ufw status numbered` command is used to display the current status of Uncomplicated Firewall (ufw) rules along with their corresponding numbers. This is useful when you want to see a numbered list of firewall rules, making it easier to identify specific rules that you may want to modify or delete.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn10" onclick="codeCopyFunction('code-div10','copy-btn10')">copy</button>
+                    </div>
+                    <div id="code-div10" class="code-div">
+                        <p>sudo ufw status numbered</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">11. Deny All Incoming Traffic from a Specific IP Address</a>
+            <p class="description-a-tag">The command sudo ufw deny from 192.168.1.2 is used to deny incoming traffic from a specific IP address (192.168.1.2) using the Uncomplicated Firewall </p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn11" onclick="codeCopyFunction('code-div11','copy-btn11')">copy</button>
+                    </div>
+                    <div id="code-div11" class="code-div">
+                        <p >sudo ufw deny from 192.168.1.2</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">12. Deny all incoming traffic</a>
+            <p class="description-a-tag">The command sudo ufw deny from 192.168.1.2 is used to deny incoming traffic from a specific IP address (192.168.1.2) using the Uncomplicated Firewall.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn12" onclick="codeCopyFunction('code-div12','copy-btn12')">copy</button>
+                    </div>
+                    <div id="code-div12" class="code-div">
+                        <p >sudo ufw default deny incoming</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">13. Allow all outgoing traffic</a>
+            <p class="description-a-tag">This command sets the default policy for outgoing traffic to allow. It ensures that all outgoing connections are permitted.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn13" onclick="codeCopyFunction('code-div13','copy-btn13')">copy</button>
+                    </div>
+                    <div id="code-div13" class="code-div">
+                        <p >sudo ufw default allow outgoing</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">14. Limit Connection Rate</a>
+            <p class="description-a-tag">After running this command, ufw will limit the rate of incoming SSH connections on port 22 to help mitigate the risk of brute-force attacks. This command only allow 6 connections per 30 seconds This limit is imposed to prevent a single IP address from making too many connection attempts within a specified time period.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn14" onclick="codeCopyFunction('code-div14','copy-btn14')">copy</button>
+                    </div>
+                    <div id="code-div14" class="code-div">
+                        <p >sudo ufw <span class="text-warning">limit</span> 22/tcp</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">15. Enable UFW Logging</a>
+            <p class="description-a-tag">After running this command, ufw will start logging information related to allowed and denied connections, which can be useful for monitoring and troubleshooting firewall activity.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn15" onclick="codeCopyFunction('code-div15','copy-btn15')">copy</button>
+                    </div>
+                    <div id="code-div15" class="code-div">
+                        <p >sudo ufw logging on</p>
+                    </div>
+                </div>
+            </div>
+            <p class="description-a-tag">`sudo ufw logging status`  will show you whether logging is currently enabled or disabled.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn16" onclick="codeCopyFunction('code-div16','copy-btn16')">copy</button>
+                    </div>
+                    <div id="code-div16" class="code-div">
+                        <p >sudo ufw logging status</p>
+                    </div>
+                </div>
+            </div>
+            <p class="description-a-tag">Keep in mind that enabling logging can generate a significant amount of log data, depending on your system's activity. Regularly review the logs to monitor firewall events and detect any unusual or suspicious activity.</p>
+
+            <a class="content-a-tag">16. Delete All Rules for a Specific Port</a>
+            <p class="description-a-tag">he sudo ufw delete allow 80 command is used to delete a specific rule that allows incoming traffic on port 80 using the Uncomplicated Firewall (ufw) on a Linux system.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn017" onclick="codeCopyFunction('code-div017','copy-btn017')">copy</button>
+                    </div>
+                    <div id="code-div017" class="code-div">
+                        <p>sudo ufw delete allow 80</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">17. Delete All Rules for a Specific Port and Protocol</a>
+            <p class="description-a-tag">The command `sudo ufw delete allow 22/tcp` is used to delete a specific rule that allows incoming SSH (Secure Shell) connections on port 22 using the Uncomplicated Firewall (ufw) on a Linux system.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn17" onclick="codeCopyFunction('code-div17','copy-btn17')">copy</button>
+                    </div>
+                    <div id="code-div17" class="code-div">
+                        <p>sudo ufw delete allow 22/tcp</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">18. Delete All Rules from a Specific IP Address</a>
+            <p class="description-a-tag">The command `sudo ufw delete allow from 192.168.1.2` is used to delete a specific rule that allows incoming traffic from the IP address 192.168.1.2 using the Uncomplicated Firewall (ufw) on a Linux system.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn18" onclick="codeCopyFunction('code-div18','copy-btn18')">copy</button>
+                    </div>
+                    <div id="code-div18" class="code-div">
+                        <p >sudo ufw delete allow from 192.168.1.2</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">19. Show Application Profiles Available for Configuration</a>
+            <p class="description-a-tag">The sudo ufw app list command is used to display a list of available application profiles that can be used with Uncomplicated Firewall (ufw) on a Linux system. These application profiles simplify the process of configuring firewall rules by grouping related rules for specific applications or services.When you run the command, it will show you a list of application profiles that you can use to configure firewall rules.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn19" onclick="codeCopyFunction('code-div19','copy-btn19')">copy</button>
+                    </div>
+                    <div id="code-div19" class="code-div">
+                        <p >sudo ufw app list</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">Output:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    </div>
+                    <div  class="code-div">
+                        <p><span class="text-maroon">Available applications</span> :</p>
+                        <p class="text-maroon">&nbsp;&nbsp;Apache</p>
+                        <p>&nbsp;&nbsp;<span class="text-maroon">Apache</span><span class="text-warning"> Full</span></p>
+                        <p class="text-maroon">&nbsp;&nbsp;Apache Secure</p>
+                        <p class="text-maroon">&nbsp;&nbsp;CUPS</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">20. Allow Traffic on a Specific Network Interface</a>
+            <p class="description-a-tag">The command `sudo ufw allow in on eth0` is used to allow incoming traffic on the specified network interface (in this case, `eth0`) using the Uncomplicated Firewall (ufw).After running this command, incoming traffic on the specified network interface will be permitted by the firewall.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn20" onclick="codeCopyFunction('code-div20','copy-btn20')">copy</button>
+                    </div>
+                    <div id="code-div20" class="code-div">
+                        <p >sudo ufw allow in on eth0</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">21. Show UFW Status Verbosely</a>
+            <p class="description-a-tag">The `sudo ufw status verbose` command is used to display a more detailed and verbose output of the current status and rules of the Uncomplicated Firewall (ufw) on a Linux system. This command provides additional information, such as the logging status and additional details about the rules.</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn21" onclick="codeCopyFunction('code-div21','copy-btn21')">copy</button>
+                    </div>
+                    <div id="code-div21" class="code-div">
+                        <p >sudo ufw status verbose</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">Output:</p>
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">vbnet</h6>
+                    </div>
+                    <div id="code-div22" class="code-div">
+                        <p><span class="text-danger">Status:</span>&nbsp;&nbsp;active</p>
+                        <p><span class="text-danger">Logging:</span><span class="text-primary">&nbsp;&nbsp;on</span>&nbsp;&nbsp;(low)</p>
+                        <p style="white-space: nowrap;"><span class="text-danger">Default:</span>&nbsp;&nbsp;deny (incoming), allow (outgoing), deny (routed)</p>
+                        <p><span class="text-warning">New </span>profiles:<span class="text-primary">&nbsp;&nbsp;skip</span></p>
+                        <p style="white-space: nowrap;"><span class="text-primary">To&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Action&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From</span></p>
+
+                        <p style="white-space: nowrap;"><span class="text-primary">--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>----------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------</span></p>
+
+                        <p style="white-space: nowrap;"><span class="text-maroon">22</span>/tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>ALLOW <span class="text-primary"> IN</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary">&nbsp;&nbsp;Anywhere</span></p>
+                        <p style="white-space: nowrap;"><span class="text-maroon">80</span>/tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>ALLOW <span class="text-primary"> IN</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary">&nbsp;&nbsp;Anywhere</span></p>
+                        <p style="white-space: nowrap;"><span class="text-maroon">443</span>/tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>DENY <span class="text-primary"> IN</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary">&nbsp;&nbsp;Anywhere</span></p>
+                        <p style="white-space: nowrap;"><span class="text-maroon">123</span>/udp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>ALLOW <span class="text-primary"> IN</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary">&nbsp;&nbsp;Anywhere</span></p>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            <p class="description">These commands provide a wide range of options for configuring UFW. Adjust them based on your specific requirements, and always be cautious when configuring firewalls to avoid locking yourself out of the system. </p>
+            <div class="next-prev-div mb-5 mt-5">
+                <a title="Why Configure FireWall" href="./Nginx-24-Why-Configure-FireWall.html" class="next-prev-button">Previous</a>
+                <a title="Next topic about Deploy Node Project" id="next-page-center" href="./Nginx-26-Deploy-Node-Project.html">Deploy Node Project</a>
+                <a title="Next topic about Deploy Node Project" href="./Nginx-26-Deploy-Node-Project.html" class="next-prev-button">Next</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Main div end -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

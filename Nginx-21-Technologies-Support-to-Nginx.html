@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Tutor</title>
+    <link rel="icon" type="image" href="./images/st Logo png.PNG">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24bccd4d50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-navbar">
+        <div class="main-navbar-first">
+            <button id="list-button" class="list-button"><i id="list-i"  class="fa-solid fa-list"></i></button>
+            <button id="mood-change" onclick="modeChanger()">
+                <i id="mood-i" style='font-size:24px' class='fas'>&#xf186;</i>
+            </button>
+        </div>
+        <div class="main-navbar-second">
+            <a href="/"><img class="brand-logo" src="./images/blue logo png .png" alt="stack tutor logo"></a>
+        </div>
+        <div class="main-navbar-third">
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="result-box">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- top category-->
+    <div id="category-div" class="category-div">
+        <a href="./Nginx-1-intro.html">Nginx</a>
+        <a href="./coming-soon.html">Java Script</a>
+        <a href="./coming-soon.html">React JS</a>
+        <a href="./coming-soon.html">Node JS</a>
+        <a href="./coming-soon.html">Angular JS</a>
+        <a href="./coming-soon.html">Mongo DB</a>
+        <a href="./coming-soon.html">Nginx</a>
+        <a href="./coming-soon.html">AWS</a>
+        <a href="./coming-soon.html">JAVA</a>
+        <a href="./coming-soon.html">Python</a>
+        <a href="./coming-soon.html">Type Script </a>
+    </div>
+    <!-- top category end -->
+
+    <!-- Main div -->
+    <div id="main-div">
+        <div id="list-div" class="index-div">
+
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="small-input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                </div>
+                <div id="index-result-box">
+                </div>
+            </div>
+            <br>
+
+            <!-- index div -->
+            <h6 class="index-title">NGINX Index</h6>
+            <div class="index-future-link">
+                <a href="./Nginx-1-intro.html" ><i class="fa-solid fa-up-right-from-square"></i> Nginx Introduction</a>
+                <a href="./Nginx-2-C10k.html"> <i class="fa-solid fa-up-right-from-square"></i> C10k Problem</a>
+                <a href="./Nginx-3-High Performance.html"><i class="fa-solid fa-up-right-from-square"></i> High Performance</a>
+                <a href="./Nginx-4-Reverse Proxy.html" ><i class="fa-solid fa-up-right-from-square"></i> Reverse Proxy</a>
+                <a href="./Nginx-5-caching.html"><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
+                <a href="./Nginx-6-Types-caching.html" ><i class="fa-solid fa-up-right-from-square"></i> Types of Caching</a>
+                <a href="./Nginx-7-Proxy caching.html"><i class="fa-solid fa-up-right-from-square"></i> Proxy caching</a>
+                <a href="./Nginx-8-Proxy-caching-config.html"><i class="fa-solid fa-up-right-from-square"></i> Configuring proxy caching</a>
+                <a href="./Nginx-9-Load-Balancing.html" ><i class="fa-solid fa-up-right-from-square"></i> Load Balancing</a>
+                <a href="./Nginx-10-Load-Balancing-configuration.html"><i class="fa-solid fa-up-right-from-square"></i> Load Balancing Configuration</a>
+                <a href="./Nginx-11-Security-Features.html" ><i class="fa-solid fa-up-right-from-square"></i> Security Features</a>
+                <a href="./Nginx-12-Web-Application-Firewall .html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> Web Application Firewall</a>
+                <a href="./Nginx-13-WAF-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> WAF in NGINX.</a>
+                <!-- update -->
+                <a href="./Nginx-14-ModSecurity-Configuration.html" ><i class="fa-solid fa-up-right-from-square"></i> ModSecurity Configuration</a>
+                <a href="./Nginx-15-DDoS.html" ><i class="fa-solid fa-up-right-from-square"></i> What is DDos</a>
+                <a href="./Nginx-16-DDoS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> DDos in NGINX</a>
+                <a href="./Nginx-17-SSl-TLS-Termination.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS Termination</a>
+                <a href="./Nginx-18-SSL-TLS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS in NGINX</a>
+                <a href="./Nginx-19-URL-Rewriting.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting</a>
+                <a href="./Nginx-20-URL-Rewriting-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting in NGINX</a>
+                <a href="./Nginx-21-Technologies-Support-to-Nginx.html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting to NGINX</a>
+                <a href="./Nginx-22-PM2.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2</a>
+                <a href="./Nginx-23-PM2-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2 Commands</a>
+                <a href="./Nginx-24-Why-Configure-FireWall.html" ><i class="fa-solid fa-up-right-from-square"></i>Why Configure FireWall</a>
+                <a href="./Nginx-25-FireWall-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i>FireWall Commands</a>
+                <a href="./Nginx-26-Deploy-Node-Project.html" ><i class="fa-solid fa-up-right-from-square"></i>Deploy Node Project</a>
+            </div>
+            <!-- index div end -->
+        </div>
+
+
+        <div id="content-div" class="content-div mb-2">
+            <h1 class="main-title mt5 mb-5">Technologies Support to NGINX</h1>
+
+            <p class="description-a-tag  mb-3">Nginx supports a wide range of technologies and features, making it a versatile web server and reverse proxy. Here we give detailed breakdown of the technologies and features that Nginx supports:</p>
+
+            <a class="content-a-tag">1. HTTP and HTTPS</a>
+            <p class="description-a-tag">Nginx is primarily designed to handle HTTP and HTTPS protocols, making it an efficient web server for serving static content, as well as a reverse proxy for dynamic content.HTTP and HTTPS are protocols for transmitting data on the internet, HTTPS adds a layer of security through encryption, making it the preferred choice for secure communication, particularly when dealing with sensitive information.</p>
+
+            <a class="content-a-tag">2. Load Balancing</a>
+            <p class="description-a-tag">Nginx includes built-in load balancing features that distribute incoming traffic across multiple backend servers. It supports various load-balancing algorithms, including round-robin, least connections, and IP hash.
+            </p>
+
+            <a class="content-a-tag">3. Reverse Proxy</a>
+            <p class="description-a-tag">Nginx is commonly used as a reverse proxy to distribute client requests to backend servers, improving load balancing, and providing additional security and performance features.</p>
+            
+
+            <a class="content-a-tag">4. HTTP/2 and HTTP/3</a>
+            <p class="description-a-tag">Nginx supports HTTP/2, the second major version of the HTTP network protocol. Additionally, it has experimental support for HTTP/3, the latest version of the HTTP protocol designed for enhanced performance over the web.</p>
+
+            <a class="content-a-tag">5. FastCGI and uWSGI</a>
+            <p class="description-a-tag">FastCGI(Fast Common Gateway Interface) is a protocol for efficient communication between web servers and external applications. uWSGI is a powerful and flexible application server container that plays a crucial role in deploying and managing web applications across various programming languages and environments.  Nginx can communicate with application servers using FastCGI and uWSGI protocols, allowing it to serve dynamic content generated by backend applications.</p>
+
+            <a class="content-a-tag">6. WebSocket</a>
+            <p class="description-a-tag">WebSocket is a valuable technology for building responsive, real-time web applications that demand efficient and low-latency communication between clients and servers.Nginx has support for WebSocket, enabling bidirectional communication between clients and servers over a single, long-lived connection.</p>
+
+            <a class="content-a-tag">7. SSL/TLS Termination</a>
+            <p class="description-a-tag">Nginx can handle SSL/TLS termination, allowing it to encrypt and decrypt traffic before passing it to backend servers. This offloads the SSL/TLS processing from application servers.</p>
+
+            <a class="content-a-tag">8. Server-Side Includes (SSI)</a>
+            <p class="description-a-tag">Nginx supports Server-Side Includes, allowing dynamic content to be inserted into static HTML pages at runtime.</p>
+
+            <a class="content-a-tag">9. URL Rewriting</a>
+            <p class="description-a-tag">Nginx provides URL rewriting capabilities, allowing you to modify or redirect URLs based on specified rules. This is often used for creating user-friendly URLs or implementing redirection.</p>
+
+            <a class="content-a-tag">10. Gzip Compression</a>
+            <p class="description-a-tag">Nginx supports gzip compression to reduce the size of transmitted data, improving website performance by reducing latency and bandwidth usage.</p>
+
+            <a class="content-a-tag">11. IPv6 Support</a>
+            <p class="description-a-tag">Nginx has native support for IPv6, allowing it to work seamlessly in environments that use the IPv6 protocol.</p>
+
+            <a class="content-a-tag">12. Access Controls and Security Features</a>
+            <p class="description-a-tag">Nginx provides access control mechanisms, including IP-based access restrictions, allowing or denying access based on client IP addresses. It also supports features such as rate limiting and basic authentication.</p>
+
+            <a class="content-a-tag">13. Content Caching</a>
+            <p class="description-a-tag">Nginx supports content caching, which can significantly improve performance by storing static or dynamically generated content in memory for faster retrieval.</p>
+
+            <a class="content-a-tag">14. Docker Integration</a>
+            <p class="description-a-tag">Nginx is commonly used in conjunction with Docker containers, providing a robust and scalable solution for serving web applications within containerized environments.</p>
+            
+            <a class="content-a-tag">15. Logging and Monitoring</a>
+            <p class="description-a-tag">Nginx provides extensive logging capabilities, and it can be integrated with various monitoring tools to track and analyze server performance and traffic.</p>
+
+            <a class="content-a-tag">16. Lua Scripting</a>
+            <p class="description-a-tag">Nginx can be extended using Lua scripting, allowing developers to write custom scripts to enhance its functionality.</p>
+
+            <a class="content-a-tag">17. DNS Resolution</a>
+            <p class="description-a-tag">Nginx can perform DNS resolution internally, allowing it to dynamically resolve backend server addresses. This is particularly helpful in environments where backend server addresses may change frequently.</p>
+
+            <a class="content-a-tag">18. SNI (Server Name Indication)</a>
+            <p class="description-a-tag">Nginx supports SNI, an extension to the TLS protocol, allowing the server to present multiple SSL certificates on a single IP address. This is essential for hosting multiple SSL-enabled websites on the same server.</p>
+
+            <a class="content-a-tag">19. Global Rate Limiting</a>
+            <p class="description-a-tag">Nginx provides rate limiting not only for specific locations but also globally. This can be useful to limit the rate of requests across the entire server.</p>
+
+            <a class="content-a-tag">20. Image and Video Streaming</a>
+            <p class="description-a-tag">Nginx can be used for efficient image and video streaming. It supports features like byte-range requests, enabling the efficient delivery of large media files.</p>
+
+            <p class="description">These are some technologies and features that Nginx supports.These additional technologies and features highlight the extensive capabilities of Nginx, making it a powerful and flexible solution for various web serving, proxying, and load balancing needs.</p>
+
+            <div class="next-prev-div mb-5 mt-5">
+                <a title="URL Rewriting Nginx" href="./Nginx-20-URL-Rewriting-Nginx.html" class="next-prev-button">Previous</a>
+                <a title="Next topic about PM2" id="next-page-center" href="./Nginx-22-PM2.html">PM2</a>
+                <a title="Next topic about PM2" href="./Nginx-22-PM2.html" class="next-prev-button">Next</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Main div end -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stack Tutor</title>
     <link rel="icon" type="image" href="./images/st Logo png.PNG">
-    <link rel="stylesheet"  href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/24bccd4d50.js" crossorigin="anonymous"></script>
@@ -21,8 +21,7 @@
             </button>
         </div>
         <div class="main-navbar-second">
-            <a href="/"><img class="brand-logo" src="./images/blue logo png .png"
-                    alt="stack tutor logo"></a>
+            <a href="/"><img class="brand-logo" src="./images/blue logo png .png" alt="stack tutor logo"></a>
         </div>
         <div class="main-navbar-third">
             <div class="search-box">
@@ -74,11 +73,11 @@
 
             <div class="index-future-link">
                 <a href="./Nginx-1-intro.html"><i class="fa-solid fa-up-right-from-square"></i> Nginx Introduction</a>
-                <a href="./Nginx-2-C10k.html" ><i class="fa-solid fa-up-right-from-square"></i> C10k Problem</a>
-                <a href="./Nginx-3-High Performance.html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> High Performance</a>
+                <a href="./Nginx-2-C10k.html"><i class="fa-solid fa-up-right-from-square"></i> C10k Problem</a>
+                <a href="./Nginx-3-High Performance.html"><i class="fa-solid fa-up-right-from-square"></i> High Performance</a>
                 <a href="./Nginx-4-Reverse Proxy.html"><i class="fa-solid fa-up-right-from-square"></i> Reverse Proxy</a>
-                <a href="./Nginx-5-caching.html"><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
-                <a href="./Nginx-6-Types-caching.html" ><i class="fa-solid fa-up-right-from-square"></i> Types of Caching</a>
+                <a href="./Nginx-5-caching.html" ><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
+                <a href="./Nginx-6-Types-caching.html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> Types of Caching</a>
                 <a href="./Nginx-7-Proxy caching.html"><i class="fa-solid fa-up-right-from-square"></i> Proxy caching</a>
                 <a href="./Nginx-8-Proxy-caching-config.html"  ><i class="fa-solid fa-up-right-from-square"></i> Proxy Caching Configuring</a>
                 <a href="./Nginx-9-Load-Balancing.html"><i class="fa-solid fa-up-right-from-square"></i> Load Balancing </a>
@@ -105,62 +104,79 @@
 
         </div>
         <div id="content-div" class="content-div mb-2">
-            <h1 class="main-title mt5 mb-5">High Performance</h1>
+            <h1 class="main-title mt5 mb-5">Types of Caching</h1>
 
-            <p class="description mt-5 mb-3">Nginx is a popular open-source web server and reverse proxy server known for its high-performance capabilities.Nginx is Considering several key strategies and configurations to achieve High Performance:
+            <p class="description-a-tag  mb-3">You read about what nginx caching is and what its advantages were before
+                this page.On this page, you will read about types of caching in Nginx. Nginx offers various types of
+                caching to improve the performance of web applications and websites. Here is a comprehensive list of
+                caching types in Nginx:
             </p>
 
-            <a class="content-a-tag">1. Worker Processes and Worker Connections</a>
-            <p class="description-a-tag" >Adjust the number of worker processes and worker connections in the Nginx configuration file (nginx.conf). Worker processes determine how many CPU cores Nginx can use, and worker connections define the maximum number of connections per worker process.
-                You should tailor these values based on your server's hardware resources and expected traffic load. Generally, one worker process per CPU core is a good starting point.</p>
+            <a class="content-a-tag">1. Proxy Cache</a>
+            <p class="description-a-tag">
+                Proxy caching in Nginx is a feature that allows Nginx to store and serve cached copies of responses from
+                upstream servers (usually web application servers or other proxy servers). Caches responses from
+                upstream web servers (e.g., application servers) so that Nginx can serve them directly without
+                forwarding requests to the upstream servers again. It is commonly used for caching both static and
+                dynamic content.</p>
 
-                <a class="content-a-tag">2. Keep-Alive Connections</a>
-            <p class="description-a-tag" >Enabling keep-alive connections allows clients to reuse existing connections for multiple requests, reducing the overhead of establishing new connections. Set appropriate 'keepalive_timeout' and 'keepalive_requests' values to control how long connections are kept open and how many requests can be made over a single connection.</p>
+            <a class="content-a-tag">2. Static File Cache</a>
+            <p class="description-a-tag">Caches static files such as images, stylesheets, JavaScript files, and other
+                assets to reduce the load on the server and serve them quickly.</p>
 
-            <a class="content-a-tag">3. Event Handling Mechanisms</a>
-            <p class="description-a-tag" >Nginx supports various event handling mechanisms, including 'epoll',' kqueue', and select. The best choice depends on your server's operating system.
-                On Linux systems, epoll is typically the most efficient option. To configure Nginx to use 'epoll,' add 'use epoll;' to your 'nginx.conf'.</p>
+            <a class="content-a-tag">3. FastCGI Cache</a>
+            <p class="description-a-tag"> Nginx FastCGI Cache on NGINX reduces server response time. Caches responses
+                generated by FastCGI applications (e.g., PHP, Python) when Nginx acts as a reverse proxy for these
+                applications. Specifies the directory where FastCGI cache files will be stored using the
+                "fastcgi_cache_path" directive.</p>
 
-            <a class="content-a-tag">4. Buffering and Buffers</a>
-            <p class="description-a-tag" >Fine-tune buffer sizes based on your workload. Parameters like 'client_body_buffer_size', 'client_header_buffer_size', and output_buffers can affect server performance.
-                Additionally, you can enable the 'tcp_nopush' and 'tcp_nodelay' directives to optimize TCP packet handling.</p>
+            <a class="content-a-tag">4. Micro Caching</a>
+            <p class="description-a-tag">Micro-caching is an effective method for accelerating the delivery of dynamic,
+                non personalized content by caching it for very short periods of time. </p>
 
-            <a class="content-a-tag">5. Caching</a>
-            <p class="description-a-tag" >Use Nginx's caching mechanisms to cache static content or even dynamic content if appropriate. The 'proxy_cache' and 'fastcgi_cache' directives can significantly reduce the load on backend servers.</p>
+            <a class="content-a-tag">5. SSL Session Cache</a>
+            <p class="description-a-tag">Sessions in SSL/TLS have been around since SSL v2. They allow multiple
+                connections to use the same key data to calculate encryption keys for the
+                connection instead of performing a full negotiation to determined the
+                encryption keys. Caches SSL session parameters to reduce the computational overhead of SSL/TLS
+                handshakes, especially for frequently visited HTTPS sites. </p>
 
-            <a class="content-a-tag">6. Load Balancing</a>
-            <p class="description-a-tag" >Nginx can be used as a load balancer to distribute traffic across multiple backend servers. Configure load balancing with the 'upstream' block and appropriate load balancing algorithms (e.g., 'least_conn', 'ip_hash') to distribute traffic effectively.</p>
+            <a class="content-a-tag">6. Memcached and Redis Caching</a>
+            <p class="description-a-tag">
+                Nginx can be configured to use Memcached or Redis as caching backends. This allows for more advanced and
+                distributed caching strategies, often used in high-traffic or load-balanced environments.</p>
 
-            <a class="content-a-tag">7. Optimize SSL/TLS</a>
-            <p class="description-a-tag" >If you're using SSL/TLS, optimize your SSL/TLS settings. Use strong ciphers and protocols while balancing security and performance.
-            Implement session resumption mechanisms like session caching and session tickets to reduce the overhead of SSL/TLS handshakes.</p>
+            <a class="content-a-tag">7. LevelDB Caching</a>
+            <p class="description-a-tag">
+                LevelDB is a key-value store that Nginx can use as a caching backend, providing a different storage
+                mechanism for cache items.</p>
 
-            <a class="content-a-tag">8. Gzip Compression</a>
-            <p class="description-a-tag" >Enable gzip compression to reduce the size of transmitted data, improving page load times. Use gzip and related directives in your server block configuration to enable compression.</p>
-            
 
-            <a class="content-a-tag">9. Monitoring and Tuning</a>
-            <p class="description-a-tag" >Continuously monitor server performance using tools like 'top', 'htop', and Nginx's built-in status module. Adjust configurations based on actual server load and bottlenecks.</p>
+            <a class="content-a-tag">8. Proxy Response Cache</a>
+            <p class="description-a-tag">
+                Caches the responses sent by Nginx itself, primarily used when Nginx is acting as a reverse proxy for
+                other web servers.</p>
 
-            <a class="content-a-tag">10. Content Delivery Networks (CDNs)</a>
-            <p class="description-a-tag" >Consider using CDNs to offload static content and distribute it globally, reducing the load on your Nginx server.</p>
-
-            <a class="content-a-tag">11. Security</a>
-            <p class="description-a-tag" >Implement security best practices to protect your Nginx server from DDoS attacks, malicious requests, and other security threats.</p>
+            <a class="content-a-tag">9. Cache Manager Module</a>
+            <p class="description-a-tag"> It enables administrators to selectively invalidate cached items based on
+                specific URLs or patterns.The "ngx_cache_purge module" is a third-party module that allows manual cache
+                purging. </p>
 
 
             <p class="description">
-                Remember that server performance tuning is a continuous process. Regularly monitor your server's performance, analyze logs, and adjust configurations as needed to ensure optimal performance as your traffic patterns evolve.</p>
+                In summary, These various types of caching mechanisms in Nginx can be used to optimize different aspects
+                of web application performance, improve resource utilization, and enhance user experience. The choice of
+                caching type depends on the specific requirements of your web infrastructure.</p>
             <div class="next-prev-div mb-5 mt-5">
-                <a title="C10k Problem" href="./Nginx-2-C10k.html" class="next-prev-button">Previous</a>
-                <a title="Next topic about reverse Proxy" id="next-page-center" href="./Nginx-4-Reverse Proxy.html">Reverse Proxy</a>
-                <a title="Next topic about reverse Proxy" href="./Nginx-4-Reverse Proxy.html" class="next-prev-button">Next</a>
+                <a title="About Caching" href="./Nginx-5-caching.html" class="next-prev-button">Previous</a>
+                <a title="Next topic about Proxy Caching" id="next-page-center" href="./Nginx-7-Proxy caching.html">Proxy Caching</a>
+                <a title="Next topic about Proxy Caching" href="./Nginx-7-Proxy caching.html" class="next-prev-button">Next</a>
             </div>
 
         </div>
     </div>
     <!-- Main div end -->
-        <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>

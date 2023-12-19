@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Tutor</title>
+    <link rel="icon" type="image" href="./images/st Logo png.PNG">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24bccd4d50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-navbar">
+        <div class="main-navbar-first">
+            <button id="list-button" class="list-button"><i id="list-i"  class="fa-solid fa-list"></i></button>
+            <button id="mood-change" onclick="modeChanger()">
+                <i id="mood-i" style='font-size:24px' class='fas'>&#xf186;</i>
+            </button>
+        </div>
+        <div class="main-navbar-second">
+            <a href="/"><img class="brand-logo" src="./images/blue logo png .png" alt="stack tutor logo"></a>
+        </div>
+        <div class="main-navbar-third">
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="result-box">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- top category-->
+    <div id="category-div" class="category-div">
+        <a href="./Nginx-1-intro.html">Nginx</a>
+        <a href="./coming-soon.html">Java Script</a>
+        <a href="./coming-soon.html">React JS</a>
+        <a href="./coming-soon.html">Node JS</a>
+        <a href="./coming-soon.html">Angular JS</a>
+        <a href="./coming-soon.html">Mongo DB</a>
+        <a href="./coming-soon.html">Nginx</a>
+        <a href="./coming-soon.html">AWS</a>
+        <a href="./coming-soon.html">JAVA</a>
+        <a href="./coming-soon.html">Python</a>
+        <a href="./coming-soon.html">Type Script </a>
+    </div>
+    <!-- top category end -->
+
+    <!-- Main div -->
+    <div id="main-div">
+        <div id="list-div" class="index-div">
+
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="small-input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                </div>
+                <div id="index-result-box">
+                </div>
+            </div>
+            <br>
+
+            <!-- index div -->
+            <h6 class="index-title">NGINX Index</h6>
+            <div class="index-future-link">
+                <a href="./Nginx-1-intro.html"><i class="fa-solid fa-up-right-from-square"></i> Nginx Introduction</a>
+                <a href="./Nginx-2-C10k.html"><i class="fa-solid fa-up-right-from-square"></i> C10k Problem</a>
+                <a href="./Nginx-3-High Performance.html"><i class="fa-solid fa-up-right-from-square"></i> High Performance</a>
+                <a href="./Nginx-4-Reverse Proxy.html"><i class="fa-solid fa-up-right-from-square"></i> Reverse Proxy</a>
+                <a href="./Nginx-5-caching.html" ><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
+                <a href="./Nginx-6-Types-caching.html" ><i class="fa-solid fa-up-right-from-square"></i> Types of Caching</a>
+                <a href="./Nginx-7-Proxy caching.html"><i class="fa-solid fa-up-right-from-square"></i> Proxy caching</a>
+                <a href="./Nginx-8-Proxy-caching-config.html" id="standing-page" ><i class="fa-solid fa-up-right-from-square"></i> Proxy Caching Configuring</a>
+                <a href="./Nginx-9-Load-Balancing.html"><i class="fa-solid fa-up-right-from-square"></i> Load Balancing </a>
+                <a href="./Nginx-10-Load-Balancing-configuration.html"><i class="fa-solid fa-up-right-from-square"></i> Load Balancing Configuration</a>
+                <a href="./Nginx-11-Security-Features.html" ><i class="fa-solid fa-up-right-from-square"></i> Security Features</a>
+                <a href="./Nginx-12-Web-Application-Firewall .html" ><i class="fa-solid fa-up-right-from-square"></i> Web Application Firewall</a>
+                <a href="./Nginx-13-WAF-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> WAF in NGINX.</a>
+                <!-- update -->
+                <a href="./Nginx-14-ModSecurity-Configuration.html" ><i class="fa-solid fa-up-right-from-square"></i> ModSecurity Configuration</a>
+                <a href="./Nginx-15-DDoS.html" ><i class="fa-solid fa-up-right-from-square"></i> What is DDos</a>
+                <a href="./Nginx-16-DDoS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> DDos in NGINX</a>
+                <a href="./Nginx-17-SSl-TLS-Termination.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS Termination</a>
+                <a href="./Nginx-18-SSL-TLS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS in NGINX</a>
+                <a href="./Nginx-19-URL-Rewriting.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting</a>
+                <a href="./Nginx-20-URL-Rewriting-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting in NGINX</a>
+                <a href="./Nginx-21-Technologies-Support-to-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i>Technologies Support to Nginx</a>
+                <a href="./Nginx-22-PM2.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2</a>
+                <a href="./Nginx-23-PM2-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2 Commands</a>
+                <a href="./Nginx-24-Why-Configure-FireWall.html" ><i class="fa-solid fa-up-right-from-square"></i>Why Configure FireWall</a>
+                <a href="./Nginx-25-FireWall-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i>FireWall Commands</a>
+                <a href="./Nginx-26-Deploy-Node-Project.html" ><i class="fa-solid fa-up-right-from-square"></i>Deploy Node Project</a>
+            </div>
+            <!-- index div end -->
+        </div>
+
+
+        <div id="content-div" class="content-div mb-2">
+            <h1 class="main-title mt5 mb-5">Proxy Caching Configuring</h1>
+
+            <p class="description-a-tag  mb-3">You read about what nginx Proxy Caching is and what its advantages were before
+                this page. Configuring proxy caching in Nginx can significantly improve the performance and reduce the load on your backend servers by storing and serving cached responses to client requests. Here's how to set up proxy caching in Nginx:
+            </p>
+
+
+            <a class="content-a-tag">1. Install Nginx</a>
+            <p class="description-a-tag">
+                If you haven't already, install Nginx on your server using your system's package manager. For example, on Ubuntu, you can use:</p>
+
+                 <div class="code-box">
+                    <div class="code-panel">
+                        <div class="copy-code-div">
+                            <h6 class="which-cmd">bash</h6>
+                        <button class="copy-code" id="copy-btn" onclick="codeCopyFunction('code-div','copy-btn')">copy</button>
+                        </div>
+                        <div id="code-div" class="code-div">
+                            <p>sudo apt update<br>sudo apt install nginx</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            <a class="content-a-tag">2. Open Nginx Configuration</a>
+            <p class="description-a-tag"> Nginx's main configuration file is typically located in `/etc/nginx/nginx.conf`. Open this file in a text editor, or create a new configuration file if you want to keep caching configuration separate, for example, in a file like `/etc/nginx/conf.d/proxy_cache.conf`.</p>
+
+            <a class="content-a-tag">3. Configure the Cache Path</a>
+            <p class="description-a-tag">Inside the http block in your Nginx configuration file, you need to specify the cache path where cached data will be stored. Add the following codes:</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">Nginx</h6>
+                    <button class="copy-code" id="copy-btn-1" onclick="codeCopyFunction('code-div-1','copy-btn-1')">copy</button>
+                    </div>
+                    <div id="code-div-1" class="code-div">
+                        <p>http {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;proxy_cache_path /path/to/cache_directory levels=1:2 keys_zone=my_cache:10m max_size=10g inactive=60m use_temp_path=off;
+                            <br>}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <ul>
+                <li class="description-a-tag"><strong>`/path/to/cache_directory` </strong> Replace this with the actual path where you want to store cached files.</li>
+                <br>
+                <li class="description-a-tag"><strong>`keys_zone=my_cache:10m` </strong> defines  the domain name or IP address that Nginx should handle.</li>
+            </ul>
+
+            <a class="content-a-tag">4. Create a Cache Zone</a>
+            <p class="description-a-tag">In your server block, or within a specific location block where you want to enable caching, define a cache zone using the `proxy_cache` and `proxy_cache_key` directives.Here's we give an example </p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">Nginx</h6>
+                    <button class="copy-code" id="copy-btn-2" onclick="codeCopyFunction('code-div-2','copy-btn-2')">copy</button>
+                    </div>
+                    <div id="code-div-2" class="code-div">
+                        <p>server {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;... <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;location / {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_cache my_cache;<br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_cache_key "$scheme$request_method$host$request_uri";<br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_cache_valid 200 304 10m;<br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_cache_use_stale error timeout updating http_500 http_502 http_503 http_504;<br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_cache_background_update on;<br>
+                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                        }
+                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <ul>
+                <li class="description-a-tag"><strong>`proxy_cache my_cache` </strong> This specifies the name of the cache zone (should match the `keys_zone` in `proxy_cache_path`).</li>
+                <br>
+                <li class="description-a-tag"><strong>`proxy_cache_key "$scheme$request_method$host$request_uri"` </strong> Defines the key used to identify cached content. You can customize this based on your needs.
+                </li>
+                <br>
+                <li class="description-a-tag"><strong>`proxy_cache_valid` </strong>  Determines for how long different HTTP response codes should be cached (e.g., 200 OK and 304 Not Modified in the example).</li>
+                <br>
+                <li class="description-a-tag"><strong>`proxy_cache_use_stale` </strong>  Allows serving stale cached content in case of errors, timeouts, or while updating the cache.</li>
+                <br>
+                <li class="description-a-tag"><strong>`proxy_cache_background_update on`</strong> Enables background updates of cached content, ensuring that clients receive the latest data while the cache is being updated.</li>
+                
+            </ul>
+
+            <a class="content-a-tag">6. Test and Reload Nginx</a>
+            <p class="description-a-tag">
+                 Before applying the configuration, it's a good practice to test it for syntax errors:</p>
+
+                 <div class="code-box">
+                    <div class="code-panel">
+                        <div class="copy-code-div">
+                            <h6 class="which-cmd">bash</h6>
+                        <button class="copy-code" id="copy-btn4" onclick="codeCopyFunction('code-div4','copy-btn4')">copy</button>
+                        </div>
+                        <div id="code-div4" class="code-div">
+                            <p >sudo nginx -t</p>
+                        </div>
+                    </div>
+                </div>
+
+            <p class="description-a-tag">
+                If there are no errors, you can reload Nginx to apply the changes:</p>
+
+                <div class="code-box">
+                    <div class="code-panel">
+                        <div class="copy-code-div">
+                            <h6 class="which-cmd">bash</h6>
+                        <button class="copy-code" id="copy-btn5" onclick="codeCopyFunction('code-div5','copy-btn5')">copy</button>
+                        </div>
+                        <div id="code-div5" class="code-div">
+                            <p >sudo systemctl reload nginx</p>
+                        </div>
+                    </div>
+                </div>
+
+        
+            <p class="description">
+                With this configuration, Nginx will now cache responses and serve cached content, reducing the load on your backend servers and improving response times for frequently accessed resources. </p>
+            <div class="next-prev-div mb-5 mt-5">
+                <a title="Proxy Caching" href="./Nginx-7-Proxy caching.html" class="next-prev-button">Previous</a>
+                <a title="Next topic about Load Balancing" id="next-page-center" href="./Nginx-9-Load-Balancing.html">Load Balancing</a>
+                <a title="Next topic about Load Balancing" href="./Nginx-9-Load-Balancing.html" class="next-prev-button">Next</a>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Main div end -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

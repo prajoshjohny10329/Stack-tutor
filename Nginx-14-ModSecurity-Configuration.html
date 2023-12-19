@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Tutor</title>
+    <link rel="icon" type="image" href="./images/st Logo png.PNG">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24bccd4d50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-navbar">
+        <div class="main-navbar-first">
+            <button id="list-button" class="list-button"><i id="list-i"  class="fa-solid fa-list"></i></button>
+            <button id="mood-change" onclick="modeChanger()">
+                <i id="mood-i" style='font-size:24px' class='fas'>&#xf186;</i>
+            </button>
+        </div>
+        <div class="main-navbar-second">
+            <a href="/"><img class="brand-logo" src="./images/blue logo png .png" alt="stack tutor logo"></a>
+        </div>
+        <div class="main-navbar-third">
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="result-box">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- top category-->
+    <div id="category-div" class="category-div">
+        <a href="./Nginx-1-intro.html">Nginx</a>
+        <a href="./coming-soon.html">Java Script</a>
+        <a href="./coming-soon.html">React JS</a>
+        <a href="./coming-soon.html">Node JS</a>
+        <a href="./coming-soon.html">Angular JS</a>
+        <a href="./coming-soon.html">Mongo DB</a>
+        <a href="./coming-soon.html">Nginx</a>
+        <a href="./coming-soon.html">AWS</a>
+        <a href="./coming-soon.html">JAVA</a>
+        <a href="./coming-soon.html">Python</a>
+        <a href="./coming-soon.html">Type Script </a>
+    </div>
+    <!-- top category end -->
+
+    <!-- Main div -->
+    <div id="main-div">
+        <div id="list-div" class="index-div">
+
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="small-input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                </div>
+                <div id="index-result-box">
+                </div>
+            </div>
+            <br>
+
+            <!-- index div -->
+            <h6 class="index-title">NGINX Index</h6>
+            <div class="index-future-link">
+                <a href="./Nginx-1-intro.html" ><i class="fa-solid fa-up-right-from-square"></i> Nginx Introduction</a>
+                <a href="./Nginx-2-C10k.html"> <i class="fa-solid fa-up-right-from-square"></i> C10k Problem</a>
+                <a href="./Nginx-3-High Performance.html"><i class="fa-solid fa-up-right-from-square"></i> High Performance</a>
+                <a href="./Nginx-4-Reverse Proxy.html" ><i class="fa-solid fa-up-right-from-square"></i> Reverse Proxy</a>
+                <a href="./Nginx-5-caching.html"><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
+                <a href="./Nginx-6-Types-caching.html" ><i class="fa-solid fa-up-right-from-square"></i> Types of Caching</a>
+                <a href="./Nginx-7-Proxy caching.html"><i class="fa-solid fa-up-right-from-square"></i> Proxy caching</a>
+                <a href="./Nginx-8-Proxy-caching-config.html"><i class="fa-solid fa-up-right-from-square"></i> Configuring proxy caching</a>
+                <a href="./Nginx-9-Load-Balancing.html" ><i class="fa-solid fa-up-right-from-square"></i> Load Balancing</a>
+                <a href="./Nginx-10-Load-Balancing-configuration.html" ><i class="fa-solid fa-up-right-from-square"></i> Load Balancing Configuration</a>
+                <a href="./Nginx-11-Security-Features.html" ><i class="fa-solid fa-up-right-from-square"></i> Security Features</a>
+                <a href="./Nginx-12-Web-Application-Firewall .html" ><i class="fa-solid fa-up-right-from-square"></i> Web Application Firewall</a>
+                <a href="./Nginx-13-WAF-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> WAF in NGINX.</a>
+                <!-- update -->
+                <a href="./Nginx-14-ModSecurity-Configuration.html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> ModSecurity Configuration</a>
+                <a href="./Nginx-15-DDoS.html" ><i class="fa-solid fa-up-right-from-square"></i> What is DDos</a>
+                <a href="./Nginx-16-DDoS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> DDos in NGINX</a>
+                <a href="./Nginx-17-SSl-TLS-Termination.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS Termination</a>
+                <a href="./Nginx-18-SSL-TLS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS in NGINX</a>
+                <a href="./Nginx-19-URL-Rewriting.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting</a>
+                <a href="./Nginx-20-URL-Rewriting-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting in NGINX</a>
+                <a href="./Nginx-21-Technologies-Support-to-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i>Technologies Support to Nginx</a>
+                <a href="./Nginx-22-PM2.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2</a>
+                <a href="./Nginx-23-PM2-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2 Commands</a>
+                <a href="./Nginx-24-Why-Configure-FireWall.html" ><i class="fa-solid fa-up-right-from-square"></i>Why Configure FireWall</a>
+                <a href="./Nginx-25-FireWall-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i>FireWall Commands</a>
+                <a href="./Nginx-26-Deploy-Node-Project.html" ><i class="fa-solid fa-up-right-from-square"></i>Deploy Node Project</a>
+            </div>
+            <!-- index div end -->
+        </div>
+
+
+        <div id="content-div" class="content-div mb-2">
+            <h1 class="main-title mt5 mb-5">Web Application Firewall (WAF) Configuration</h1>
+
+            <p class="description-a-tag  mb-3">You read about what Web Application Firewall (WAF) and what its advantages were before this page. 
+                To implement a Web Application Firewall (WAF) in NGINX, you can use the popular open-source WAF called ModSecurity. Here are the steps to set up ModSecurity with NGINX.
+            </p>
+
+            <a class="content-a-tag">1. Install NGINX</a>
+            <p class="description-a-tag">If you haven't already, install NGINX on your web server. You can typically do this using your operating system's package manager. For example, on Ubuntu, you can run:</p>
+
+                 <div class="code-box">
+                    <div class="code-panel">
+                        <div class="copy-code-div">
+                            <h6 class="which-cmd">bash</h6>
+                        <button class="copy-code" id="copy-btn" onclick="codeCopyFunction('code-div','copy-btn')">copy</button>
+                        </div>
+                        <div id="code-div" class="code-div">
+                            <p>sudo apt-get update<br>sudo apt-get install nginx</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            <a class="content-a-tag">2. Install ModSecurity</a>
+            <p class="description-a-tag">You need to install ModSecurity, an open-source WAF, and its NGINX connector module. You can use the `modsecurity` and `libnginx-mod-http-modsecurity` packages on Ubuntu. Run the following command to install them:</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn1" onclick="codeCopyFunction('code-div1','copy-btn1')">copy</button>
+                    </div>
+                    <div id="code-div1" class="code-div">
+                        <p>sudo apt-get install modsecurity libnginx-mod-http-modsecurity</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">3. Enable ModSecurity in NGINX</a>
+            <p class="description-a-tag">After installing the required packages, you need to enable ModSecurity in your NGINX configuration. Create or modify an NGINX configuration file for your website. For example, if you want to configure a site named `example.com`, you can create a configuration file in the `/etc/nginx/sites-available/` directory.</p>
+            
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn2" onclick="codeCopyFunction('code-div2','copy-btn2')">copy</button>
+                    </div>
+                    <div id="code-div2" class="code-div">
+                        <p >sudo nano /etc/nginx/sites-available/example.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="description-a-tag">Inside this configuration file, add the following lines to enable ModSecurity:</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">Nginx</h6>
+                    <button class="copy-code" id="copy-btn3" onclick="codeCopyFunction('code-div3','copy-btn3')">copy</button>
+                    </div>
+                    <div id="code-div3" class="code-div">
+                        <p >server {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;# ... other server configuration ...<br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;modsecurity on;<br>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;modsecurity_rules_file /etc/nginx/modsec/main.conf;<br>
+                            <br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;# ... other server configuration ...<br>
+                            }<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <a class="content-a-tag">4. Configure ModSecurity Rules</a>
+            <p class="description-a-tag">ModSecurity uses rule sets to protect your web application. You can use the OWASP ModSecurity Core Rule Set (CRS) as a starting point. You can download it and place the rules files in the `/etc/nginx/modsec/` directory. Here's how to get the OWASP CRS:</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn4" onclick="codeCopyFunction('code-div4','copy-btn4')">copy</button>
+                    </div>
+                    <div id="code-div4" class="code-div">
+                        <p >sudo apt-get install -y owasp-modsecurity-crs</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">After installing the CRS, you can configure it by creating a custom ModSecurity configuration file. For example:</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn5" onclick="codeCopyFunction('code-div5','copy-btn5')">copy</button>
+                    </div>
+                    <div id="code-div5" class="code-div">
+                        <p >sudo cp /usr/share/modsecurity-crs/crs-setup.conf.example /etc/nginx/modsec/main.conf
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description-a-tag">Edit the `main.conf` file and adjust the rules and configuration to fit your specific needs.</p>
+
+
+            <a class="content-a-tag">5. Test Your Configuration</a>
+            <p class="description-a-tag">Before deploying your WAF to a production environment, it's essential to test it thoroughly. You can use ModSecurity's detection-only mode to log potential rule violations without blocking traffic. This allows you to identify and fine-tune rules before enforcing them. In your NGINX configuration, set `modsecurity_rules_detection_only` to `on`.</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">Nginx</h6>
+                    <button class="copy-code" id="copy-btn6" onclick="codeCopyFunction('code-div6','copy-btn6')">copy</button>
+                    </div>
+                    <div id="code-div6" class="code-div">
+                        <p >modsecurity on;<br>
+                            modsecurity_rules_file /etc/nginx/modsec/main.conf;<br>
+                            modsecurity_rules_detection_only on;
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">6. Restart NGINX</a>
+            <p class="description-a-tag">Restart NGINX to apply the changes:</p>
+
+            <div class="code-box">
+                <div class="code-panel">
+                    <div class="copy-code-div">
+                        <h6 class="which-cmd">bash</h6>
+                    <button class="copy-code" id="copy-btn7" onclick="codeCopyFunction('code-div7','copy-btn7')">copy</button>
+                    </div>
+                    <div id="code-div7" class="code-div">
+                        <p >sudo service nginx restart
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-a-tag">7. Monitor and Fine-Tune</a>
+            <p class="description-a-tag">After enabling ModSecurity, monitor your logs for any false positives or false negatives. Adjust your rules and configuration as needed to balance security and functionality.</p>
+
+            <a class="content-a-tag">8. Regular Updates</a>
+            <p class="description-a-tag">Keep ModSecurity and your CRS up to date. New rules and security patches are released regularly to protect against emerging threats.</p>
+
+            <a class="content-a-tag">9. Backup and Recovery</a>
+            <p class="description-a-tag">Implement a backup and recovery plan in case your WAF inadvertently blocks legitimate traffic. Ensure you have a process in place to quickly revert to a previous configuration if necessary.</p>
+    
+            <p class="description">By following these steps, you can successfully implement a Web Application Firewall (WAF) using ModSecurity in NGINX to enhance the security of your web applications and protect them from a variety of online threats and attacks.</p>
+            <div class="next-prev-div mb-5 mt-5">
+                <a title="WAF in NGINX" href="./Nginx-13-WAF-Nginx.html" class="next-prev-button">Previous</a>
+                <a title="Next topic about What is DDoS" id="next-page-center" href="./Nginx-15-DDoS.html">What is DDoS</a>
+                <a title="Next topic about What is DDoS" href="./Nginx-15-DDoS.html" class="next-prev-button">Next</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Main div end -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

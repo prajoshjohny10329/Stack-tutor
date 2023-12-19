@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stack Tutor</title>
     <link rel="icon" type="image" href="./images/st Logo png.PNG">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"  href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/24bccd4d50.js" crossorigin="anonymous"></script>
@@ -15,11 +15,13 @@
 <body>
     <div class="main-navbar">
         <div class="main-navbar-first">
-            <button id="list-button" class="list-button"><i id="list-i" class="fa-solid fa-list"></i></button>
-            <button id="mood-change" onclick="modeChanger()"><i style='font-size:24px' class='fas'>&#xf186;</i></button>
+            <button id="list-button" class="list-button"><i id="list-i"  class="fa-solid fa-list"></i></button>
+            <button id="mood-change" onclick="modeChanger()">
+                <i id="mood-i" style='font-size:24px' class='fas'>&#xf186;</i>
+            </button>
         </div>
         <div class="main-navbar-second">
-            <a href="../index.html"><img class="brand-logo" src="./images/blue logo png .png"
+            <a href="/"><img class="brand-logo" src="./images/blue logo png .png"
                     alt="stack tutor logo"></a>
         </div>
         <div class="main-navbar-third">
@@ -41,21 +43,21 @@
     <div id="category-div" class="category-div">
         <a href="./Nginx-1-intro.html">Nginx</a>
         <a href="./coming-soon.html">Java Script</a>
-        <a href="">React JS</a>
-        <a href="">Node JS</a>
-        <a href="">Angular JS</a>
-        <a href="">Mongo DB</a>
-        <a href="">Nginx</a>
-        <a href="">AWS</a>
-        <a href="">JAVA</a>
-        <a href="">Python</a>
-        <a href="">Type Script</a>
+        <a href="./coming-soon.html">React JS</a>
+        <a href="./coming-soon.html">Node JS</a>
+        <a href="./coming-soon.html">Angular JS</a>
+        <a href="./coming-soon.html">Mongo DB</a>
+        <a href="./coming-soon.html">Nginx</a>
+        <a href="./coming-soon.html">AWS</a>
+        <a href="./coming-soon.html">JAVA</a>
+        <a href="./coming-soon.html">Python</a>
+        <a href="./coming-soon.html">Type Script </a>
     </div>
     <!-- top category end -->
 
-    <!-- content div -->
+    <!-- Main div -->
     <div id="main-div">
-        <div id="list-div" class="index-div mb-3">
+        <div id="list-div" class="index-div">
 
             <div class="search-box">
                 <div class="search-row">
@@ -74,15 +76,13 @@
 
 
         </div>
-        <div id="content-div" class="content-div mb-5 ">
-            <h1 class="coming-soon mt5 mb-5">Coming Soon.......</h1>
-
-            
+        <div  class="coming-soon mb-5">
+            <h1  >Coming Soon ....</h1>
         </div>
 
         </div>
     </div>
-    <!-- content div end -->
+    <!-- Main div end -->
         <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

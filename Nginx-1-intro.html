@@ -8,6 +8,7 @@
     <link rel="icon" type="image"
         href="./images/st Logo png.PNG">
     <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="This page is contain detail explanation about Nginx">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/24bccd4d50.js" crossorigin="anonymous"></script>
@@ -16,11 +17,13 @@
 <body>
     <div class="main-navbar">
         <div class="main-navbar-first">
-            <button id="list-button" class="list-button"><i id="list-i" class="fa-solid fa-list"></i></button>
-            <button id="mood-change" onclick="modeChanger()"><i style='font-size:24px' class='fas'>&#xf186;</i></button>
+            <button id="list-button" class="list-button"><i id="list-i"  class="fa-solid fa-list"></i></button>
+            <button id="mood-change" onclick="modeChanger()">
+                <i id="mood-i" style='font-size:24px' class='fas'>&#xf186;</i>
+            </button>
         </div>
         <div class="main-navbar-second">
-            <a href="../index.html"><img class="brand-logo"
+            <a href="/"><img class="brand-logo"
                     src="./images/blue logo png .png"
                     alt="stack tutor logo"></a>
         </div>
@@ -38,29 +41,27 @@
         </div>
     </div>
 
-    
-
-
     <!-- top category-->
     <div id="category-div" class="category-div">
         <a href="./Nginx-1-intro.html">Nginx</a>
-        <a href="">Java Script</a>
-        <a href="">React JS</a>
-        <a href="">Node JS</a>
-        <a href="">Angular JS</a>
-        <a href="">Mongo DB</a>
-        <a href="">AWS</a>
-        <a href="">JAVA</a>
-        <a href="">Python</a>
-        <a href="">Type Script</a>
+        <a href="./coming-soon.html">Java Script</a>
+        <a href="./coming-soon.html">React JS</a>
+        <a href="./coming-soon.html">Node JS</a>
+        <a href="./coming-soon.html">Angular JS</a>
+        <a href="./coming-soon.html">Mongo DB</a>
+        <a href="./coming-soon.html">Nginx</a>
+        <a href="./coming-soon.html">AWS</a>
+        <a href="./coming-soon.html">JAVA</a>
+        <a href="./coming-soon.html">Python</a>
+        <a href="./coming-soon.html">Type Script </a>
     </div>
     <!-- top category end -->
 
-    <!-- content div -->
-    <div id="main-div">
 
+
+    <!-- Main div -->
+    <div id="main-div">
         <div id="list-div" class="index-div">
-            
             <div class="search-box">
                 <div class="search-row">
                     <input class="search-input" id="small-input-box" type="text" placeholder="search anything ..."
@@ -70,93 +71,102 @@
                 </div>
             </div>
             <br>
-
             <h6 class="index-title">NGINX Index</h6>
-            
+
             <div class="index-future-link">
                 <a href="./Nginx-1-intro.html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> Nginx Introduction</a>
                 <a href="./Nginx-2-C10k.html"> <i class="fa-solid fa-up-right-from-square"></i> C10k Problem</a>
                 <a href="./Nginx-3-High Performance.html"><i class="fa-solid fa-up-right-from-square"></i> High Performance</a>
                 <a href="./Nginx-4-Reverse Proxy.html" ><i class="fa-solid fa-up-right-from-square"></i> Reverse Proxy</a>
-                <a href=""><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
-                <a href=""><i class="fa-solid fa-up-right-from-square"></i> SSL/TLS Termination</a>
-                <a href=""><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting</a>
-                <a href=""><i class="fa-solid fa-up-right-from-square"></i> WebSockets Support</a>
-                <a href=""><i class="fa-solid fa-up-right-from-square"></i> HTTP/2 Support</a>
+                <a href="./Nginx-5-caching.html"><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
+                <a href="./Nginx-6-Types-caching.html" ><i class="fa-solid fa-up-right-from-square"></i> Types of Caching</a>
+                <a href="./Nginx-7-Proxy caching.html"><i class="fa-solid fa-up-right-from-square"></i> Proxy caching</a>
+                <a href="./Nginx-8-Proxy-caching-config.html"  ><i class="fa-solid fa-up-right-from-square"></i> Proxy Caching Configuring</a>
+                <a href="./Nginx-9-Load-Balancing.html"><i class="fa-solid fa-up-right-from-square"></i> Load Balancing </a>
+                <a href="./Nginx-10-Load-Balancing-configuration.html"><i class="fa-solid fa-up-right-from-square"></i> Load Balancing Configuration</a>
+                <a href="./Nginx-11-Security-Features.html" ><i class="fa-solid fa-up-right-from-square"></i> Security Features</a>
+                <a href="./Nginx-12-Web-Application-Firewall .html" ><i class="fa-solid fa-up-right-from-square"></i> Web Application Firewall</a>
+                <a href="./Nginx-13-WAF-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> WAF in NGINX.</a>
+                <!-- update -->
+                <a href="./Nginx-14-ModSecurity-Configuration.html" ><i class="fa-solid fa-up-right-from-square"></i> ModSecurity Configuration</a>
+                <a href="./Nginx-15-DDoS.html" ><i class="fa-solid fa-up-right-from-square"></i> What is DDos</a>
+                <a href="./Nginx-16-DDoS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> DDos in NGINX</a>
+                <a href="./Nginx-17-SSl-TLS-Termination.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS Termination</a>
+                <a href="./Nginx-18-SSL-TLS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS in NGINX</a>
+                <a href="./Nginx-19-URL-Rewriting.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting</a>
+                <a href="./Nginx-20-URL-Rewriting-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting in NGINX</a>
+                <a href="./Nginx-21-Technologies-Support-to-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i>Technologies Support to Nginx</a>
+                <a href="./Nginx-22-PM2.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2</a>
+                <a href="./Nginx-23-PM2-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2 Commands</a>
+                <a href="./Nginx-24-Why-Configure-FireWall.html" ><i class="fa-solid fa-up-right-from-square"></i>Why Configure FireWall</a>
+                <a href="./Nginx-25-FireWall-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i>FireWall Commands</a>
+                <a href="./Nginx-26-Deploy-Node-Project.html" ><i class="fa-solid fa-up-right-from-square"></i>Deploy Node Project</a>
             </div>
 
 
         </div>
-        <div id="content-div" class="content-div mb-5 ">
-            <h1 class="main-title mt5 mb-5">Introduction of Nginx</h1>
+        <div id="content-div" class="content-div mb-2">
+            <h1 class="main-title mt5 mb-5">Introduction of NGINX</h1>
 
-            <h3 class="sub-title mt5">What is Nginx</h3>
-            <p class="description">Shortly say Nginx is a software. NGINX is a famous and popular open-source web server
-                and reverse proxy server software.It is an open source , lightweight and high-performance web server
+            <h3 class="sub-title mt5">What is NGINX</h3>
+            <p class="description">Shortly say NGINX is a software. NGINX is a famous and popular open-source web server
+                and reverse proxy server software.It is an open source, lightweight and high-performance web server
                 that can be used to serve static files. Its most advantage is its ability to handle a large number of
-                concurrent connections efficiently. Nginx is faster than other software
+                concurrent connections efficiently. NGINX is faster than other software
             </p>
 
-            <h3 class="sub-title mt-2">Why using Nginx</h3>
-            <p  class="description">Overall, NGINX is a software that can significantly improve the performance, scalability, and security of web applications and services.Most common use of NGINX :</p>
+            <h3 class="sub-title mt-2">Why using NGINX</h3>
+            <p  class="description">Overall, NGINX is a software that can significantly improve the performance, scalability, and security of web applications and services. Most common use of NGINX :</p>
 
-            <a class="content-a-tag">1.High Performance and Efficiency</a>
+            <a class="content-a-tag" href="./Nginx-3-High Performance.html">1. High Performance and Efficiency</a>
             <p class="description-a-tag">NGINX is mainly designed to handle a large number of concurrent connections efficiently It uses an asynchronous, event-driven architecture to handle many connections with low resource usage.It is suitable for high-traffic websites and applications such as Google,Netflix</p>
-            <a class="read-more" href="./Nginx-3-High Performance.html">read more</a>
 
-            <a class="content-a-tag">2.Load Balancing</a>
+            <a class="content-a-tag" href="./Nginx-9-Load-Balancing.html">2. Load Balancing</a>
             <p class="description-a-tag" > NGINX can distributing users incoming requests across multiple backend servers. This helps distribute the load and ensures optimal resource utilization, scalability of web application, and fault tolerance.</p>
 
-            <a class="content-a-tag">3.Reverse Proxy</a>
+            <a class="content-a-tag" href="./Nginx-4-Reverse Proxy.html">3. Reverse Proxy</a>
             <p class="description-a-tag">NGINX can act as a reverse proxy server, forwarding requests from clients to backend servers and then returning the responses to clients. This helps protect backend servers from direct exposure to the internet and provides additional security features.</p>
 
-            <a class="content-a-tag">4.Caching</a>
+            <a class="content-a-tag" href="./Nginx-5-caching.html">4. Caching</a>
             <p class="description-a-tag">The cache is one of the best methods in NGINX. NGINX can be configured to cache static content. This is particularly useful for serving static assets like images, stylesheets, and JavaScript files. This method reduces the load on backend servers and reduces the response times to the users. </p>
             
-            <a class="content-a-tag">5.Security</a>
+            <a class="content-a-tag" href="./Nginx-11-Security-Features.html">5. Security</a>
             <p class="description-a-tag">NGINX offers various security features, such as access control, 
             rate limiting, and request filtering, that help protect your applications from malicious traffic and attacks.</p>
 
-            <a class="content-a-tag">6.SSL/TLS Termination</a>
+            <a class="content-a-tag" href="./Nginx-17-SSl-TLS-Termination.html">6. SSL/TLS Termination</a>
             <p class="description-a-tag">NGINX can handle SSL/TLS encryption and decryption, offloading this work from backend servers. This improves performance. This method also simplifies the setup of HTTPS for your applications.</p>
 
 
-            <a class="content-a-tag">7.URL Rewriting</a>
+            <a class="content-a-tag" href="./Nginx-19-URL-Rewriting.html">7. URL Rewriting</a>
             <p class="description-a-tag">NGINX provides powerful URL redirection and  
             rewriting capabilities, allowing you to customize and optimize URLs for SEO or other purposes.</p>
 
-            <a class="content-a-tag">8.Technologies Support</a>
+            <a class="content-a-tag" href="./Nginx-21-Technologies-Support-to-Nginx">8. Technologies Support</a>
             <p class="description-a-tag">NGINX supports modern web technologies such as WebSockets and HTTP/2, it can enable real-time communication and improved performance of your applications.</p>
 
-            <a class="content-a-tag">9.Configuration Flexibility</a>
+            <a class="content-a-tag" >9. Configuration Flexibility</a>
             <p class="description-a-tag">NGINX allow configuration flexibility for user. NGINX's configuration file allows you to fine-tune its behavior according to your specific needs. It's highly customizable and provides a lot of control over how requests are processed.</p>
 
-            <a class="content-a-tag">10.Microservices architectures</a>
+            <a class="content-a-tag">10. Microservices architectures</a>
             <p class="description-a-tag">NGINX is commonly used in microservices architectures. For API gateway, handling routing, load balancing, and security between different services.</p>
 
-            <a class="content-a-tag">11.Easy to Set Up</a>
+            <a class="content-a-tag">11. Easy to Set Up</a>
             <p class="description-a-tag">NGINX comparatively
-            easy to install and configure. Nginx provides well-documented configuration syntax. Community support makes it accessible for both beginners and experienced administrators.</p>
+            easy to install and configure. NGINX provides well-documented configuration syntax. Community support makes it accessible for both beginners and experienced administrators.</p>
 
-            <br><br>
+            <br>
             <h3 class="sub-title mt-2">Target of this document</h3>
             <p class="description">This tutorial provides a complete idea about NGINX. Our NGINX tutorial is designed for beginners and professionals.</p>
 
             <div class="next-prev-div  mt-5 mb-5">
-                <a href="./index.html" class="next-prev-button">Preview</a>
-                <a href="./Nginx-2-C10k.html" class="next-prev-button">Next</a>
-    
+                <a title="Previous topic about Nginx introduction" href="./index.html" class="next-prev-button">Previous</a>
+                <a title="Next topic about C10k problem" id="next-page-center" href="./Nginx-2-C10k.html">C10k Problem</a>
+                <a title="Next topic about C10k problem" href="./Nginx-2-C10k.html" class="next-prev-button">Next</a>
             </div>
-            
         </div>
-
-   
-
     </div>
-    <!-- content div end -->
-
-
-
+    
         <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

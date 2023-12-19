@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Tutor</title>
+    <link rel="icon" type="image" href="./images/st Logo png.PNG">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24bccd4d50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-navbar">
+        <div class="main-navbar-first">
+            <button id="list-button" class="list-button"><i id="list-i"  class="fa-solid fa-list"></i></button>
+            <button id="mood-change" onclick="modeChanger()">
+                <i id="mood-i" style='font-size:24px' class='fas'>&#xf186;</i>
+            </button>
+        </div>
+        <div class="main-navbar-second">
+            <a href="/"><img class="brand-logo" src="./images/blue logo png .png" alt="stack tutor logo"></a>
+        </div>
+        <div class="main-navbar-third">
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="result-box">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- top category-->
+    <div id="category-div" class="category-div">
+        <a href="./Nginx-1-intro.html">Nginx</a>
+        <a href="./coming-soon.html">Java Script</a>
+        <a href="./coming-soon.html">React JS</a>
+        <a href="./coming-soon.html">Node JS</a>
+        <a href="./coming-soon.html">Angular JS</a>
+        <a href="./coming-soon.html">Mongo DB</a>
+        <a href="./coming-soon.html">Nginx</a>
+        <a href="./coming-soon.html">AWS</a>
+        <a href="./coming-soon.html">JAVA</a>
+        <a href="./coming-soon.html">Python</a>
+        <a href="./coming-soon.html">Type Script </a>
+    </div>
+    <!-- top category end -->
+
+    <!-- Main div -->
+    <div id="main-div">
+        <div id="list-div" class="index-div">
+
+            <div class="search-box">
+                <div class="search-row">
+                    <input class="search-input" id="small-input-box" type="text" placeholder="search anything ..."
+                        autocomplete="off">
+                </div>
+                <div id="index-result-box">
+                </div>
+            </div>
+            <br>
+
+            <!-- index div -->
+            <h6 class="index-title">NGINX Index</h6>
+            <div class="index-future-link">
+                <a href="./Nginx-1-intro.html" ><i class="fa-solid fa-up-right-from-square"></i> Nginx Introduction</a>
+                <a href="./Nginx-2-C10k.html"> <i class="fa-solid fa-up-right-from-square"></i> C10k Problem</a>
+                <a href="./Nginx-3-High Performance.html"><i class="fa-solid fa-up-right-from-square"></i> High Performance</a>
+                <a href="./Nginx-4-Reverse Proxy.html" ><i class="fa-solid fa-up-right-from-square"></i> Reverse Proxy</a>
+                <a href="./Nginx-5-caching.html"><i class="fa-solid fa-up-right-from-square"></i> Caching</a>
+                <a href="./Nginx-6-Types-caching.html" ><i class="fa-solid fa-up-right-from-square"></i> Types of Caching</a>
+                <a href="./Nginx-7-Proxy caching.html"><i class="fa-solid fa-up-right-from-square"></i> Proxy caching</a>
+                <a href="./Nginx-8-Proxy-caching-config.html"><i class="fa-solid fa-up-right-from-square"></i> Configuring proxy caching</a>
+                <a href="./Nginx-9-Load-Balancing.html" ><i class="fa-solid fa-up-right-from-square"></i> Load Balancing</a>
+                <a href="./Nginx-10-Load-Balancing-configuration.html"><i class="fa-solid fa-up-right-from-square"></i> Load Balancing Configuration</a>
+                <a href="./Nginx-11-Security-Features.html" ><i class="fa-solid fa-up-right-from-square"></i> Security Features</a>
+                <a href="./Nginx-12-Web-Application-Firewall .html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> Web Application Firewall</a>
+                <a href="./Nginx-13-WAF-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> WAF in NGINX.</a>
+                <!-- update -->
+                <a href="./Nginx-14-ModSecurity-Configuration.html" ><i class="fa-solid fa-up-right-from-square"></i> ModSecurity Configuration</a>
+                <a href="./Nginx-15-DDoS.html" ><i class="fa-solid fa-up-right-from-square"></i> What is DDos</a>
+                <a href="./Nginx-16-DDoS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> DDos in NGINX</a>
+                <a href="./Nginx-17-SSl-TLS-Termination.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS Termination</a>
+                <a href="./Nginx-18-SSL-TLS-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> SSl TLS in NGINX</a>
+                <a href="./Nginx-19-URL-Rewriting.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting</a>
+                <a href="./Nginx-20-URL-Rewriting-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i> URL Rewriting in NGINX</a>
+                <a href="./Nginx-21-Technologies-Support-to-Nginx.html" ><i class="fa-solid fa-up-right-from-square"></i>Technologies Support to Nginx</a>
+                <a href="./Nginx-22-PM2.html" id="standing-page"><i class="fa-solid fa-up-right-from-square"></i> PM2</a>
+                <a href="./Nginx-23-PM2-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i> PM2 Commands</a>
+                <a href="./Nginx-24-Why-Configure-FireWall.html" ><i class="fa-solid fa-up-right-from-square"></i>Why Configure FireWall</a>
+                <a href="./Nginx-25-FireWall-Commands.html" ><i class="fa-solid fa-up-right-from-square"></i>FireWall Commands</a>
+                <a href="./Nginx-26-Deploy-Node-Project.html" ><i class="fa-solid fa-up-right-from-square"></i>Deploy Node Project</a>
+            </div>
+            <!-- index div end -->
+        </div>
+
+
+        <div id="content-div" class="content-div mb-2">
+            <h1 class="main-title mt5 mb-5">Process Manager 2 (PM2)</h1>
+
+            <p class="description-a-tag  mb-3">PM2, or Process Manager 2, is a popular and versatile process manager for Node.js applications. It is designed to simplify the deployment and management of Node.js processes in production environments. Why using PM2 :</p>
+
+            <a class="content-a-tag">1. Process Management</a>
+            <ul>
+                <li class="description-a-tag"> <strong>Start and Stop Processes:</strong> PM2 allows you to start, stop, and restart Node.js applications easily. It ensures that your application stays online, restarting automatically if it crashes.</li><br>
+                <li class="description-a-tag"> <strong>Process Monitoring:</strong> PM2 provides a dashboard that gives you real-time information about the health and performance of your running processes.crashes.</li>
+            </ul>
+
+            <a class="content-a-tag">2. Zero Downtime Deployment</a>
+            <ul>
+                <li class="description-a-tag"> <strong>Rolling Reloads:</strong> PM2 supports zero-downtime deployment by using a rolling reload strategy. This means that when you deploy updates to your application, PM2 restarts processes one at a time, preventing downtime for end-users.</li>
+            </ul>
+
+            <a class="content-a-tag">3. Logging</a>
+            <ul>
+                <li class="description-a-tag"> <strong>Centralized Logging:</strong> PM2 collects and centralizes logs from your Node.js applications, making it easy to review and troubleshoot issues.</li><br>
+                <li class="description-a-tag"> <strong>Log Rotation:</strong> PM2 handles log rotation, preventing log files from becoming too large and managing them to conserve disk space.</li>
+            </ul>
+
+            <a class="content-a-tag">4. Process Clustering</a>
+            <ul>
+                <li class="description-a-tag"> <strong>Load Balancing:</strong> PM2 can run multiple instances (or clusters) of your application to distribute incoming traffic and balance the load. This improves the performance and reliability of your application.</li>
+            </ul>
+
+            <a class="content-a-tag">5. Environment Management</a>
+            <ul>
+                <li class="description-a-tag"> <strong>Environment Variables:</strong> PM2 allows you to set and manage environment variables for your Node.js processes.</li><br>
+                <li class="description-a-tag"> <strong>Different Environments:</strong>  PM2 supports different environments (development, production, etc.), allowing you to configure and manage processes differently based on the environment.</li>
+            </ul>
+
+            <a class="content-a-tag">6. Startup Scripts</a>
+            <ul>
+                <li class="description-a-tag"> <strong>System Startup:</strong> PM2 provides a feature to generate startup scripts, allowing your Node.js applications to automatically start when the server boots.</li>
+            </ul>
+
+            <a class="content-a-tag">7. Module System</a>
+            <ul>
+                <li class="description-a-tag"><strong>PM2 Modules:</strong>  PM2 supports the use of modules, which are additional features and tools that extend its functionality. Examples include monitoring tools, log management solutions, and more.</li>
+            </ul>
+
+            <a class="content-a-tag">6. Integration with Key Ecosystems</a>
+            <ul>
+                <li class="description-a-tag"> <strong>Integration with Nginx:</strong> PM2 is often used in conjunction with Nginx or other web servers. Nginx can act as a reverse proxy, forwarding requests to the Node.js application processes managed by PM2.</li><br>
+                <li class="description-a-tag"> <strong>Integration with Monitoring Tools:</strong>  PM2 integrates with monitoring tools, allowing you to track the performance of your applications over time.</li>
+            </ul>
+
+            <a class="content-a-tag">9. Process Scaling</a>
+            <ul>
+                <li class="description-a-tag"><strong>Scale Horizontally:</strong> PM2 enables horizontal scaling by allowing you to run multiple instances of your application. This can be particularly useful for handling increased traffic.</li>
+            </ul>
+
+            <p class="description">Overall, PM2 is a powerful tool for managing Node.js processes in production, providing features for deployment, monitoring, scaling, and ensuring the reliability of your applications.Next page we will covered PM2 commands.</p>
+
+            <div class="next-prev-div mb-5 mt-5">
+                <a title="Technologies Support to Nginx" href="./Nginx-21-Technologies-Support-to-Nginx.html" class="next-prev-button">Previous</a>
+                <a title="Next topic about PM2 Commands" id="next-page-center" href="./Nginx-23-PM2-Commands.html">PM2 Commands</a>
+                <a title="Next topic about PM2 Commands" href="./Nginx-23-PM2-Commands.html" class="next-prev-button">Next</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Main div end -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
